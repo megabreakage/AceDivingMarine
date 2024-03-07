@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://acedivingmarine.com" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="keywords"
-            content="Kenya, safaris, local, affordable, maasai, maasai mara, lion, jungle, international, affordable, destinations, beach, sea, ocean, dolphins, shark, whales, boat, affordable, destinations" />
+            content="diving, marine, services, marine services, marine services dubai, marine services usa, usa, dubai, sea, ocean, deep sea, construction, scuba diving, scuba" />
         <meta name="facebook-domain-verification" content="956cb2fqf1khk " />
 
         <!-- Google / Search Engine Tags -->
@@ -22,7 +22,7 @@
         <meta itemprop="description"
             content="A leading provider of marine construction and infrastructure support services">
         <meta itemprop="url" content="https://acedivingmarine.com">
-        <meta itemprop="image" content="http://127.0.0.1:8000/assets/site/images/rctravel-logo.png">
+        <meta itemprop="image" content="{{ asset('assets/images/Logos/adm-logo.png') }}">
 
         <!-- Facebook Meta Tags -->
         <meta property="og:title"
@@ -34,7 +34,7 @@
         <meta property="og:url" content="https://acedivingmarine.com">
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website">
-        <meta property="og:image" content="http://127.0.0.1:8000/assets/site/images/rctravel-logo-square.png">
+        <meta property="og:image" content="{{ asset('assets/images/Logos/adm-logo-square.png') }}">
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="1000" />
         <meta property="og:image:type" content="image/png" />
@@ -45,34 +45,35 @@
             content="Ace Diving Marine Services - acedivingmarine.com | A leading provider of marine construction and infrastructure support services">
         <meta name="twitter:description"
             content="A leading provider of marine construction and infrastructure support services">
-        <meta name="twitter:image" content="http://127.0.0.1:8000/assets/site/images/rctravel-logo-square.png">
-        <meta name="twitter:site" content="@royalchoicetravel" />
+        <meta name="twitter:image" content="{{ asset('assets/images/Logos/adm-logo-square.png') }}">
+        <meta name="twitter:site" content="@acedivingmarine" />
 
 
-        <link rel="icon" type="image/png" href="{{ asset('assets/site/images/Logos/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/images/Logos/favicon.ico') }}">
 
-        @include('site.layouts.styles')
+        @include('includes.styles')
 
-        <title>Royal Choice Travel | A leading provider of marine construction and infrastructure support services
+        <title>
+            Ace Diving Marine Services | A leading provider of marine construction and infrastructure support services
         </title>
     </head>
 
     <body>
         <div id="siteLoader" class="site-loader">
             <div class="preloader-content">
-                <img loading="lazy" src="assets/images/loader1.gif" alt="">
+                <img loading="lazy" src="{{ asset('assets/images/loader1.gif') }}" alt="">
             </div>
         </div>
         <div class="coming-soon-slider">
             @foreach ($sliders as $slider)
                 <div class="comming-soon-section"
-                    style="background-image: url({{ asset('assets/site/images/' . $slider) }}); background-size: cover ; background-repeat: no-repeat;">
+                    style="background-image: url({{ asset('assets/images/Sliders/' . $slider) }}); background-size: cover ; background-repeat: no-repeat; height: 100vh !important">
                     <div class="container">
                         <div class="comming-soon-wrap">
                             <section class="site-identity">
                                 <h1 class="site-title text-center">
                                     <img loading="lazy" class="white-logo"
-                                        src="{{ asset('assets/site/images/Logos/rctl-logo.png') }}" alt="logo">
+                                        src="{{ asset('assets/images/Logos/adm-logo-full-wide.png') }}" alt="logo">
                                 </h1>
                             </section>
                             <article class="comming-soon-content">
@@ -80,7 +81,7 @@
                                 <h4>SOMETHING AWESOME IS IN THE WORKS.</h4>
                             </article>
                             <div class="time-counter-wrap">
-                                <div class="time-counter" data-date="2024-02-20 23:58:58">
+                                <div class="time-counter" data-date="2024-03-15 23:58:58">
                                     <div class="counter-time">
                                         <span class="counter-days">0</span>
                                         <span class="label-text">Days</span>
@@ -105,16 +106,17 @@
                                         <div class="com-contact-info">
                                             <ul>
                                                 <li>
-                                                    <a href="#"><i class="fas fa-phone-alt"></i> +(254)783 027-111
+                                                    <a href="tel:+254794601226"><i class="fas fa-phone-alt"></i>
+                                                        +(254)794 601-226
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="mailto:deals@acedivingmarine.com"><i
-                                                            class="fas fa-envelope"></i>deals@acedivingmarine.com</a>
+                                                    <a href="mailto:info@acedivingmarine.com"><i
+                                                            class="fas fa-envelope"></i>info@acedivingmarine.com</a>
                                                 </li>
                                                 <li>
-                                                    <i class="fas fa-map-marker-alt"></i> The Spur Mall, Suite B-79,
-                                                    Ruiru-Kenya
+                                                    <i class="fas fa-map-marker-alt"></i> Dubai,
+                                                    UAE
                                                 </li>
                                             </ul>
                                         </div>
@@ -123,19 +125,19 @@
                                         <div class="social-icons">
                                             <ul>
                                                 <li>
-                                                    <a href="https://facebook.com/royalchoicetravel"
-                                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="https://facebook.com/acedivingmarine" target="_blank"><i
+                                                            class="fab fa-facebook-f"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/royalchoicetravel" target="_blank"><i
+                                                    <a href="https://twitter.com/acedivingmarine" target="_blank"><i
                                                             class="fab fa-twitter"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://instagram.com/royalchoicetravel"
-                                                        target="_blank"><i class="fab fa-instagram"></i></a>
+                                                    <a href="https://instagram.com/acedivingmarine" target="_blank"><i
+                                                            class="fab fa-instagram"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://youtube.com/royalchoicetravel" target="_blank"><i
+                                                    <a href="https://youtube.com/acedivingmarine" target="_blank"><i
                                                             class="fab fa-youtube"></i></a>
                                                 </li>
                                             </ul>
@@ -150,17 +152,17 @@
             @endforeach
         </div>
 
-        <script src="{{ asset('assets/site/js/jquery.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/bootstrap/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/jquery-ui/jquery-ui.min.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/countdown-date-loop-counter/loopcounter.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/modal-video/jquery-modal-video.min.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/masonry/masonry.pkgd.min.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/lightbox/dist/js/lightbox.min.js') }}"></script>
-        <script src="{{ asset('assets/site/vendors/slick/slick.min.js') }}"></script>
-        <script src="{{ asset('assets/site/js/jquery.slicknav.js') }}"></script>
-        <script src="{{ asset('assets/site/js/custom.min.js') }}"></script>
-        <script src="{{ asset('assets/site/js/js.js') }}" defer></script>
+        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/countdown-date-loop-counter/loopcounter.js') }}"></script>
+        <script src="{{ asset('assets/vendors/modal-video/jquery-modal-video.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/masonry/masonry.pkgd.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/lightbox/dist/js/lightbox.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/slick/slick.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.slicknav.js') }}"></script>
+        <script src="{{ asset('assets/js/custom.min.js') }}"></script>
+        <script src="{{ asset('assets/js/sprite.js') }}" defer></script>
     </body>
 
 </html>
