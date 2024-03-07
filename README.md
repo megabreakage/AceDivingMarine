@@ -1,9 +1,9 @@
 ---
-Name: Dubois Safaris
-Description: A Safari Tours & Travel Company
+Name: Ace Diving Marine Services
+Description: A leading provider of marine construction and infrastructure support services
 Author: Martin Njuguna (iOSync Limited)
-Initial Date: 07 January 2024
-Latest Revision Date: 09 January 2024
+Initial Date: 01 March 2024
+Latest Revision Date: 07 March 2024
 ---
 
 <p align="center">
@@ -12,9 +12,13 @@ Latest Revision Date: 09 January 2024
     </a>
 </p>
 
-## About Dubois Safaris
+## About Ace Diving Marine Services
 
-Dubois Safaris is a renowned safari tours and travel company that provides exclusive and intimate safaris ranging from Luxury, Mid-range and Budget across world’s famous safari countries, Kenya, Tanzania, Uganda and Rwanda since 2009. Whether you are looking for a private, family, group, corporate or special interest safari our professional team is always ready to give an authentic and memorable African experience.
+ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service,
+comprehensive safety and quality programs, and competitive rates since 2012. Our experience enables us to adapt quickly to unique problems and resolve potentially
+costly situations. In addition, we have the proven ability to customize systems and management teams for individual projects. We are ready to take your project to
+the next level in safety, quality, and technology. We are one of the few full-service underwater marine contractors that can provide project management, in-house
+engineering, marine and upland environmental services, and the full spectrum of ROV, Survey & commercial diving services.
 
 ## Application Development License
 
