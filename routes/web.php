@@ -17,12 +17,16 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    $sliders = [
+        'slider-banner-1.png',
+        'slider-banner-2.png',
+        'slider-banner-3.png',
+    ];
+
+    $this->data = [
+        'sliders' => $sliders,
+    ];
+    return view('comming-soon', $this->data);
 });
 
 Route::get('/dashboard', function () {
@@ -35,4 +39,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
