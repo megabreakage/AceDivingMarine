@@ -1,27 +1,5 @@
             <header id="masthead" class="site-header header-primary">
                 <!-- header html start -->
-                <div class="top-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 d-none d-lg-block">
-                                <div class="header-contact-info">
-                                    <ul>
-                                        <li>
-                                            <a href="tel:+{{ $page_data['phone_numbers'][0]['value'] }}"><i
-                                                    class="fas fa-phone-alt"></i>
-                                                {{ $page_data['phone_numbers'][0]['value'] }}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:{{ $page_data['emails'][0]['value'] }}"><i
-                                                    class="fas fa-envelope"></i>{{ $page_data['emails'][0]['value'] }}</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="bottom-header">
                     <div class="container d-flex justify-content-between align-items-center">
                         <div class="site-identity">
