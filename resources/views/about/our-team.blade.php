@@ -33,7 +33,7 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="team-item">
                     <figure class="team-image">
-                        <img src="{{ asset('assets/images/img38.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/img38.jpg') }}" alt="" style="width: 100%">
                     </figure>
                     <div class="team-content">
                         <div class="heading-wrap">
@@ -54,7 +54,7 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="team-item">
                     <figure class="team-image">
-                        <img src="{{ asset('assets/images/img38.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/img38.jpg') }}" alt="" style="width: 100%">
                     </figure>
                     <div class="team-content">
                         <div class="heading-wrap">
