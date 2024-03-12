@@ -1,33 +1,18 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-    $sliders = [
-        'slider-banner-1.png',
-        'slider-banner-2.png',
-        'slider-banner-3.png',
-    ];
-
-    $this->data = [
-        'sliders' => $sliders,
-    ];
-    return view('comming-soon', $this->data);
-});
+Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/about-us', [PageController::class, 'about'])->name('about-us');
+Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/service/{$slug}', [PageController::class, 'service-details'])->name('service.show');
+Route::get('/contact-us', [PageController::class, 'contact-us'])->name('contact-us');
+Route::get('/faqs', [PageController::class, 'contact-us'])->name('faqs');
+Route::get('/privacy-policy', [PageController::class, 'contact-us'])->name('privacy-policy');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

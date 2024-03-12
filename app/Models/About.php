@@ -16,7 +16,10 @@ class About extends Model
         'mission',
         'vision',
         'core_values',
+        'tag_line',
         'logo',
+        'image',
+        'keywords',
         'added_by',
         'updated_by'
     ];

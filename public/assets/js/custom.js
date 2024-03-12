@@ -91,6 +91,27 @@
     }]
   });
 
+  $('.activity-slider').slick({
+    dots: !0,
+    infinite: !0,
+    speed: 1200,
+    prevArrow: !0,
+    nextArrow: !0,
+    slidesToShow: 4,
+    autoplay: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      }
+    }, {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2,
+      }
+    }]
+  });
+
   $('.desti-slider').slick({
     dots: true,
     infinite: true,

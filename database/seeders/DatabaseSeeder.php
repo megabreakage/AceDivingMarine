@@ -25,8 +25,7 @@ class DatabaseSeeder extends Seeder
             CountrySeeder::class,
             CountySeeder::class,
             TownSeeder::class,
-            // ServiceSeeder::class,
-            // BlogSeeder::class,
+            ServiceSeeder::class,
             // GallerySeeder::class,
         ]);
     }
