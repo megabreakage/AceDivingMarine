@@ -1,5 +1,8 @@
             <header id="masthead" class="site-header header-primary">
                 <!-- header html start -->
+
+                <div class="top-header">
+                </div>
                 <div class="bottom-header">
                     <div class="container d-flex justify-content-between align-items-center">
                         <div class="site-identity">
@@ -19,11 +22,11 @@
                                         <a href="{{ route('home') }}">Home</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('home') }}">About</a>
+                                        <a href="{{ route('about-us') }}">About</a>
                                     </li>
                                     @if ($page_data['services'] != null && (!empty($page_data['services']) || !isEmpty($page_data['services'])))
                                         <li class="menu-item-has-children">
-                                            <a href="javascript:void()">Services</a>
+                                            <a href="{{ route('home') }}">Services</a>
                                             <ul>
                                                 @foreach ($page_data['services'] as $service)
                                                     <li>
