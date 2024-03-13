@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="section-heading text-center">
-                    <h5 class="dash-style">OUR ASSOCAITES</h5>
                     <h2>PARTNER'S AND CLIENTS</h2>
+                    <div class="title-icon-divider"><i class="fas fa-toolbox"></i></div>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officiis doloribus,
                         natus voluptatem harum ducimus voluptatibus fugit beatae fuga

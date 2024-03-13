@@ -61,11 +61,12 @@ class PageController extends Controller
 
         $this->data = [
             'title' => $this->page['about']['name'],
+            'tagline' => $this->page['about']['tagline'],
             'description' => $this->page['about']['description'],
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
             'logo' => $this->page['about']['logo'],
-            'url' => route('home'),
+            'url' => 'acedivingmarine.com',
             'partners' => $partners,
             'sliders' => $sliders,
             'page_data' => $this->page,
@@ -79,6 +80,7 @@ class PageController extends Controller
         $partners = ['logo11.png', 'logo10.png', 'logo9.png', 'logo8.png', 'logo7.png'];
         $this->data = [
             'title' => 'About Us',
+            'tagline' => $this->page['about']['tagline'],
             'description' => $this->page['about']['description'],
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
@@ -97,6 +99,7 @@ class PageController extends Controller
     {
         $this->data = [
             'title' => 'Services',
+            'tagline' => $this->page['about']['tagline'],
             'description' => $this->page['about']['description'],
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
@@ -106,7 +109,7 @@ class PageController extends Controller
         ];
 
         return response()->json($this->data);
-        return view('service.service', $this->data);
+        return view('service.services', $this->data);
     }
 
     public function service_details($slug)
@@ -114,6 +117,7 @@ class PageController extends Controller
         $service = Service::where('slug', $slug)->where('active', true)->get();
         $this->data = [
             'title' => $service->name,
+            'tagline' => $this->page['about']['tagline'],
             'description' => $service->description,
             'keywords' => $service->keywords,
             'image' => $service->image,
@@ -131,6 +135,7 @@ class PageController extends Controller
     {
         $this->data = [
             'title' => 'Services',
+            'tagline' => $this->page['about']['tagline'],
             'description' => $this->page['about']['description'],
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
