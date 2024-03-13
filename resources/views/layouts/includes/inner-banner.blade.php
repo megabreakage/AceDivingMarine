@@ -8,7 +8,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="section-disc">
-                            {{ $description }}
+                            {{ $tagline }}
                         </div>
                     </div>
                 </div>
