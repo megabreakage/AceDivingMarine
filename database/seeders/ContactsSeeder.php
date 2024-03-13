@@ -13,13 +13,21 @@ class ContactsSeeder extends Seeder
     {
         $contacts = [
             [
-                'name' => 'Email',
+                'name' => 'Info',
                 'contact_type_id' => 1,
                 'value' => 'info@acedivingmarine.com'
             ], [
-                'name' => 'Primary Phone Number',
+                'name' => 'Alternative',
+                'contact_type_id' => 1,
+                'value' => 'a.gamble@acedivingmarine.com'
+            ], [
+                'name' => 'International',
                 'contact_type_id' => 2,
-                'value' => '254794601226'
+                'value' => '+(254)794 601-226'
+            ], [
+                'name' => 'Mobile',
+                'contact_type_id' => 2,
+                'value' => '+(971)507 816-948'
             ], [
                 'name' => 'Instagram',
                 'contact_type_id' => 3,
