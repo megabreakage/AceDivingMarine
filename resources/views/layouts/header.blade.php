@@ -9,9 +9,9 @@
                             <h1 class="site-title py-2">
                                 <a href="{{ route('home') }}">
                                     <img loading="lazy" class="white-logo"
-                                        src="{{ asset('assets/images/Logos/' . $logo) }}" alt="logo">
-                                    <img loading="lazy" class="black-logo"
                                         src="{{ asset('assets/images/Logos/adm-logo-full-wide.png') }}" alt="logo">
+                                    <img loading="lazy" class="black-logo"
+                                        src="{{ asset('assets/images/Logos/' . $logo) }}" alt="logo">
                                 </a>
                             </h1>
                         </div>
