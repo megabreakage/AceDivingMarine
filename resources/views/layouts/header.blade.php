@@ -11,7 +11,7 @@
                                     <img loading="lazy" class="white-logo"
                                         src="{{ asset('assets/images/Logos/' . $logo) }}" alt="logo">
                                     <img loading="lazy" class="black-logo"
-                                        src="{{ asset('assets/images/Logos/' . $logo) }}" alt="logo">
+                                        src="{{ asset('assets/images/Logos/adm-logo-full-wide.png') }}" alt="logo">
                                 </a>
                             </h1>
                         </div>
