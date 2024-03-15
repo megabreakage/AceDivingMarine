@@ -6,8 +6,8 @@
                     <h5 class="dash-style">OUR ASSOCAITES</h5>
                     <h2>PARTNER'S AND CLIENTS</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officiis doloribus,
-                        natus voluptatem harum ducimus voluptatibus fugit beatae fuga
+                        Meet our esteemed partner, committed to excellence, innovation, and collaboration, serving our
+                        clients with integrity and unparalleled expertise
                     </p>
                 </div>
             </div>
