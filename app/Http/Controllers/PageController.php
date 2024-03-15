@@ -108,13 +108,15 @@ class PageController extends Controller
             'page_data' => $this->page,
         ];
 
-        return response()->json($this->data);
+        // return response()->json($this->data);
         return view('service.services', $this->data);
     }
 
     public function service_details($slug)
     {
-        $service = Service::where('slug', $slug)->where('active', true)->get();
+        $service = Service::where('slug', $slug)->where('active', true)->first();
+        if (!$service) abort(404);
+
         $this->data = [
             'title' => $service->name,
             'tagline' => $this->page['about']['tagline'],
@@ -126,9 +128,7 @@ class PageController extends Controller
             'page_data' => $this->page,
             'service' => $service,
         ];
-
-        return response()->json($this->data);
-        return view('service.services-details', $this->data);
+        return view('service.service-details', $this->data);
     }
 
     public function contact_us()

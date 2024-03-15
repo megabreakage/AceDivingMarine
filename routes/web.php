@@ -9,7 +9,7 @@ use Inertia\Inertia;
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/about-us', [PageController::class, 'about'])->name('about-us');
 Route::get('/services', [PageController::class, 'services'])->name('services');
-Route::get('/service/{$slug}', [PageController::class, 'service-details'])->name('service.show');
+Route::get('/services/{slug}', [PageController::class, 'service_details'])->name('service.show');
 Route::get('/contact-us', [PageController::class, 'contact_us'])->name('contact-us');
 Route::get('/faqs', [PageController::class, 'contact_us'])->name('faqs');
 Route::get('/privacy-policy', [PageController::class, 'contact_us'])->name('privacy-policy');
