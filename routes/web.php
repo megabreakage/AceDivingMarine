@@ -11,8 +11,9 @@ Route::get('/about-us', [PageController::class, 'about'])->name('about-us');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/services/{slug}', [PageController::class, 'service_details'])->name('service.show');
 Route::get('/contact-us', [PageController::class, 'contact_us'])->name('contact-us');
-Route::get('/faqs', [PageController::class, 'contact_us'])->name('faqs');
-Route::get('/privacy-policy', [PageController::class, 'contact_us'])->name('privacy-policy');
+Route::post('/submit-inquiry', [PageController::class, 'submit_inquiry'])->name('submit-inquiry');
+Route::get('/faqs', [PageController::class, 'faqs'])->name('faqs');
+Route::get('/privacy-policy', [PageController::class, 'privacy_policy'])->name('privacy-policy');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

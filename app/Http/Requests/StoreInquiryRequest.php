@@ -11,7 +11,7 @@ class StoreInquiryRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,11 @@ class StoreInquiryRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'firstname' => ['required', 'string', 'max:50'],
+            'lastname' => ['required', 'string', 'max:50'],
+            'subject' => ['required', 'string', 'max:100'],
+            'email' => ['required', 'email', 'max:100'],
+            'message' => ['required', 'string', 'max:1050'],
         ];
     }
 }

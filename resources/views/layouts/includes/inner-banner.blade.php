@@ -4,15 +4,13 @@
         <div class="container">
             <div class="inner-banner-content">
                 <h1 class="inner-title">{{ $title }}</h1>
-                {{-- @if (url()->current('/destinations') == '/destination') --}}
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="section-disc">
-                            {{ $tagline }}
+                            {{ $description }}
                         </div>
                     </div>
                 </div>
-                {{-- @endif --}}
             </div>
         </div>
     </div>

@@ -1,22 +1,21 @@
-@extends('site.layouts.master')
+@extends('layouts.master')
 
 @section('content')
-    @include('site.pages.components.inner-banner')
+    @include('layouts.includes.inner-banner')
 
     <div class="contact-page-section">
         <div class="contact-form-inner">
             <div class="container">
                 <div class="row">
-                    @include('admin.pages.components.errors-section')
+                    @include('layouts.includes.error-section')
                     <div class="col-md-6">
                         <div class="contact-from-wrap">
                             <div class="section-heading">
-                                <h5 class="dash-style">GET IN TOUCH</h5>
                                 <h2>CONTACT US TO GET MORE INFO</h2>
                                 <p>Feel free to reach out to us! We're here to assist you. Contact us today for more
                                     information and support.</p>
                             </div>
-                            <form class="contact-from" action="{{ route('submit-message') }}" method="post">
+                            <form class="contact-from" action="{{ route('submit-inquiry') }}" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -81,9 +80,6 @@
                     </div>
                     <div class="col-md-6">
                         <div class="contact-detail-wrap">
-                            <h3>Need help ?? Feel free to contact us !</h3>
-                            <p>If you find yourself in need of assistance, don't hesitate to reach out. We're here to help!
-                                Feel free to contact us anytime for support and guidance.</p>
                             <div class="details-list">
                                 <ul>
                                     <li>
@@ -92,7 +88,7 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Location Address</h4>
-                                            <span>The Spur Mall, Suite B-79, Ruiru-Kenya</span>
+                                            <span>Dubai, UAE</span>
                                         </div>
                                     </li>
                                     <li>
@@ -101,7 +97,7 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Email Address</h4>
-                                            <span>deals@royalchoicetravel.com</span>
+                                            <span>{{ $page_data['emails'][1]['value'] }}</span>
                                         </div>
                                     </li>
                                     <li>
@@ -110,19 +106,19 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Phone Number</h4>
-                                            <span>Telephone: +(254)783 027-111</span>
+                                            <span>Telephone: {{ $page_data['phone_numbers'][1]['value'] }}</span>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="contct-social social-links">
-                                <h3>Follow us on social media..</h3>
+                                <h3>Follow us on social media</h3>
                                 <ul>
-                                    <li><a href="https://facebook.com/royalchoicetravel" target="_blank"><i
+                                    <li><a href="https://facebook.com/acedivingmarine" target="_blank"><i
                                                 class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://twitter.com/royalchoiceKE" target="_blank"><i
+                                    <li><a href="https://twitter.com/acedivingmarine" target="_blank"><i
                                                 class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://instagram.com/royalchoicetravel" target="_blank"><i
+                                    <li><a href="https://instagram.com/acedivingmarine" target="_blank"><i
                                                 class="fab fa-instagram" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
@@ -133,7 +129,7 @@
         </div>
         <div class="map-section">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0335934559957!2d36.9676588767597!3d-1.1363901354843893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fc955678a67%3A0xb42cac64d8e16dea!2sSpur%20Mall!5e0!3m2!1sen!2ske!4v1707134666329!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231280.41318740178!2d55.06267965750582!3d25.07624244771207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2ske!4v1710468145076!5m2!1sen!2ske"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

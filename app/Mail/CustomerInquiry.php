@@ -40,7 +40,7 @@ class CustomerInquiry extends Mailable implements ShouldQueue
     public function content(): Content
     {
         return new Content(
-            view: 'emails.customer-submission',
+            view: 'emails.new-inquiry',
             with: ['mail_data' => $this->mail_data]
         );
     }

@@ -87,11 +87,10 @@
         </style>
 
         <!-- MESSAGE SUBJECT -->
-        <title>{{ $mail_data['title'] }}</title>
+        <title>{{ $mail_data['title'] . ' - ' . $mail_data['subject'] }}</title>
     </head>
 
     <!-- BODY -->
-    <!-- Set message background color (twice) and text color (twice) -->
 
     <body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%"
         style="
@@ -111,7 +110,6 @@
 		"
         bgcolor="#F0F0F0" text="#000000">
         <!-- SECTION / BACKGROUND -->
-        <!-- Set message background color one again -->
         <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"
             style="
 				border-collapse: collapse;
@@ -131,7 +129,6 @@
 					"
                     bgcolor="#F0F0F0">
                     <!-- WRAPPER -->
-                    <!-- Set wrapper width (twice) -->
                     <table border="0" cellpadding="0" cellspacing="0" align="center" width="560"
                         style="
 							border-collapse: collapse;
@@ -155,7 +152,6 @@
 									padding-bottom: 20px;
 								">
                                 <!-- PREHEADER -->
-                                <!-- Set text color to background color -->
                                 <div style="
 										display: none;
 										visibility: hidden;
@@ -169,17 +165,13 @@
 										color: #f0f0f0;
 									"
                                     class="preheader">
-                                    RoyalChoice Travel, a registered and trusted tour operator in Kenya, goes beyond
-                                    ordinary tours. We curate personalized journeys that immerse you in the vibrant
-                                    spirit of Kenya, Zanzibar, Cape Town, and Dubai. From thrilling wildlife safaris to
-                                    relaxing beach getaways, and unique experiences like hot air balloon safaris and
-                                    cultural visits, we craft unforgettable adventures tailored to your desires.
+                                    {{ 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service, comprehensive safety and quality programs, and competitive rates since 2012.' }}
                                 </div>
 
                                 <!-- LOGO -->
                                 <a target="_blank" style="text-decoration: none" href="{{ $mail_data['url'] }}"> <img
                                         border="0" vspace="0" hspace="0"
-                                        src="https://royalchoicetravel.com/assets/site/images/Logos/rctl-logo.png"
+                                        src="https://acedivingmarine.com/assets/images/Logos/rctl-logo.png"
                                         height="50" alt="Logo" title="Logo"
                                         style="
 											color: #000000;
@@ -190,16 +182,16 @@
 											text-decoration: none;
 											-ms-interpolation-mode: bicubic;
 											border: none;
-											display: block;
-										" /></a>
+											display: block; 
+										" />
+                                </a>
                             </td>
                         </tr>
 
                         <!-- End of WRAPPER -->
                     </table>
 
-                    <!-- WRAPPER / CONTEINER -->
-                    <!-- Set conteiner background color -->
+                    <!-- CONTENT WRAPPER -->
                     <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF"
                         width="560"
                         style="
@@ -211,7 +203,6 @@
 						"
                         class="container">
                         <!-- HEADER -->
-                        <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
                         <tr>
                             <td align="center" valign="top"
                                 style="
@@ -230,12 +221,11 @@
 									font-family: sans-serif;
 								"
                                 class="header">
-                                {{ $mail_data['sub_title'] }}
+                                {{ $mail_data['title'] }}
                             </td>
                         </tr>
 
                         <!-- SUBHEADER -->
-                        <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
                         <tr>
                             <td align="center" valign="top"
                                 style="
@@ -255,46 +245,14 @@
 									font-family: sans-serif;
 								"
                                 class="subheader">
-                                Let's Elevate your Holiday Experience
+                                {{ $mail_data['subject'] }}
                             </td>
                         </tr>
 
-                        <!-- HERO IMAGE -->
-                        <tr>
-                            <td align="center" valign="top"
-                                style="
-									border-collapse: collapse;
-									border-spacing: 0;
-									margin: 0;
-									padding: 0;
-									padding-top: 20px;
-								"
-                                class="hero">
-                                <a target="_blank" style="text-decoration: none" href="{{ $mail_data['url'] }}"><img
-                                        border="0" vspace="0" hspace="0"
-                                        src="https://royalchoicetravel.com/assets/site/images/Popular Destinations 460x255/popular-destinations-amboseli.png"
-                                        alt="Please enable images to view this content"
-                                        title="RoyalChoice Travel Packages" width="560"
-                                        style="
-											width: 100%;
-											max-width: 560px;
-											color: #000000;
-											font-size: 13px;
-											margin: 0;
-											padding: 0;
-											outline: none;
-											text-decoration: none;
-											-ms-interpolation-mode: bicubic;
-											border: none;
-											display: block;
-										" /></a>
-                            </td>
-                        </tr>
 
                         <!-- PARAGRAPH -->
-                        <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
                         <tr>
-                            <td align="center" valign="top"
+                            <td align="" valign="top"
                                 style="
 									border-collapse: collapse;
 									border-spacing: 0;
@@ -315,106 +273,7 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <td align="center" valign="top"
-                                style="
-									border-collapse: collapse;
-									border-spacing: 0;
-									margin: 0;
-									padding: 0;
-									padding-left: 6.25%;
-									padding-right: 6.25%;
-									width: 87.5%;
-									font-size: 17px;
-									font-weight: 400;
-									line-height: 160%;
-									padding-top: 25px;
-									color: #000000;
-									font-family: sans-serif;
-								"
-                                class="paragraph">
-                                To view more tours, click the button below.
-                            </td>
-                        </tr>
-
-                        <!-- BUTTON -->
-                        <tr>
-                            <td align="center" valign="top"
-                                style="
-									border-collapse: collapse;
-									border-spacing: 0;
-									margin: 0;
-									padding: 0;
-									padding-left: 6.25%;
-									padding-right: 6.25%;
-									width: 87.5%;
-									padding-top: 25px;
-									padding-bottom: 5px;
-								"
-                                class="button">
-                                <a href="{{ $mail_data['url'] }}" target="_blank" style="text-decoration: underline">
-                                    <table border="0" cellpadding="0" cellspacing="0" align="center"
-                                        style="
-											max-width: 240px;
-											min-width: 120px;
-											border-collapse: collapse;
-											border-spacing: 0;
-											padding: 0;
-										">
-                                        <tr>
-                                            <td align="center" valign="middle"
-                                                style="
-													padding: 12px 24px;
-													margin: 0;
-													border-collapse: collapse;
-													border-spacing: 0;
-													border-radius: 4px;
-													-webkit-border-radius: 4px;
-													-moz-border-radius: 4px;
-													-khtml-border-radius: 4px;
-												"
-                                                bgcolor="#E00E78">
-                                                <a target="_blank"
-                                                    style="
-														text-decoration: underline;
-														color: #ffffff;
-														font-family: sans-serif;
-														font-size: 17px;
-														font-weight: 600;
-														line-height: 120%;
-													"
-                                                    href="{{ $mail_data['url'] }}">
-                                                    {{ $mail_data['action_button'] }}
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <!-- LINE -->
-                        <!-- Set line color -->
-                        <tr>
-                            <td align="center" valign="top"
-                                style="
-									border-collapse: collapse;
-									border-spacing: 0;
-									margin: 0;
-									padding: 0;
-									padding-left: 6.25%;
-									padding-right: 6.25%;
-									width: 87.5%;
-									padding-top: 25px;
-								"
-                                class="line">
-                                <hr color="#E0E0E0" align="center" width="100%" size="1" noshade
-                                    style="margin: 0; padding: 0" />
-                            </td>
-                        </tr>
-
                         <!-- PARAGRAPH -->
-                        <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
                         <tr>
                             <td align="center" valign="top"
                                 style="
@@ -434,15 +293,15 @@
 									font-family: sans-serif;
 								"
                                 class="paragraph">
-                                Have a&nbsp;question?
-                                <a href="mailto:deals@royalchoicetravel.com" target="_blank"
+                                Have a&nbsp;question? Reach out to us on email
+                                <a href="mailto:hr@acedivingmarine.com" target="_blank"
                                     style="
 										color: #127db3;
 										font-family: sans-serif;
 										font-size: 17px;
 										font-weight: 400;
 										line-height: 160%;
-									">deals@royalchoicetravel.com</a>
+									">hr@acedivingmarine.com</a>
                             </td>
                         </tr>
 
@@ -450,7 +309,6 @@
                     </table>
 
                     <!-- WRAPPER -->
-                    <!-- Set wrapper width (twice) -->
                     <table border="0" cellpadding="0" cellspacing="0" align="center" width="560"
                         style="
 							border-collapse: collapse;
@@ -461,7 +319,6 @@
 						"
                         class="wrapper">
                         <!-- SOCIAL NETWORKS -->
-                        <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
                         <tr>
                             <td align="center" valign="top"
                                 style="
@@ -492,7 +349,7 @@
 												border-collapse: collapse;
 												border-spacing: 0;
 											">
-                                            <a target="_blank" href="https://facebook.com/royalchoicetravel"
+                                            <a target="_blank" href="https://facebook.com/acedivingmarine"
                                                 style="text-decoration: none"><img border="0" vspace="0"
                                                     hspace="0"
                                                     style="
@@ -506,7 +363,7 @@
 														color: #000000;
 													"
                                                     alt="Facebook" title="Facebook" width="44" height="44"
-                                                    src="https://royalchoicetravel.com/assets/site/images/facebook.png" /></a>
+                                                    src="https://acedivingmarine.com/assets/images/facebook.png" /></a>
                                         </td>
 
                                         <!-- ICON 2 -->
@@ -519,7 +376,7 @@
 												border-collapse: collapse;
 												border-spacing: 0;
 											">
-                                            <a target="_blank" href="https://twitter.com/royalchoiceKE"
+                                            <a target="_blank" href="https://twitter.com/acedivingmarine"
                                                 style="text-decoration: none"><img border="0" vspace="0"
                                                     hspace="0"
                                                     style="
@@ -533,7 +390,7 @@
 														color: #000000;
 													"
                                                     alt="Twitter" title="Twitter" width="44" height="44"
-                                                    src="https://royalchoicetravel.com/assets/site/images/twitter.png" /></a>
+                                                    src="https://acedivingmarine.com/assets/images/twitter.png" /></a>
                                         </td>
 
                                         <!-- ICON 3 -->
@@ -546,7 +403,7 @@
 												border-collapse: collapse;
 												border-spacing: 0;
 											">
-                                            <a target="_blank" href="https://instagram.com/royalchoicetravel"
+                                            <a target="_blank" href="https://instagram.com/acedivingmarine"
                                                 style="text-decoration: none"><img border="0" vspace="0"
                                                     hspace="0"
                                                     style="
@@ -560,15 +417,12 @@
 														color: #000000;
 													"
                                                     alt="Instagram" title="Instagram" width="44" height="44"
-                                                    src="https://royalchoicetravel.com/assets/site/images/instagram.png" /></a>
+                                                    src="https://acedivingmarine.com/assets/images/instagram.png" /></a>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
-
-                        <!-- FOOTER -->
-                        <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
                         <tr>
                             <td align="center" valign="top"
                                 style="
@@ -588,40 +442,9 @@
 									font-family: sans-serif;
 								"
                                 class="footer">
-                                If you're having trouble clicking the "View More Packages"
-                                button, copy and paste this URL into your web browser:
-                                <a href="{{ $mail_data['url'] }}" target="_blank"
-                                    style="
-										text-decoration: underline;
-										color: #999999;
-										font-family: sans-serif;
-										font-size: 13px;
-										font-weight: 400;
-										line-height: 150%;
-										color: #127db3;
-									">{{ $mail_data['url'] }}</a>
-                                anytime.
-
-                                <!-- ANALYTICS -->
-                                {{-- https://www.google-analytics.com/collect?v=1&tid={{ UA - Tracking - ID }}&cid={{ Client - ID }}&t=event&ec=email&ea=open&cs={{ Campaign - Source }}&cm=email&cn={{ Campaign - Name }} --}}
-                                <img width="1" height="1" border="0" vspace="0" hspace="0"
-                                    style="
-										margin: 0;
-										padding: 0;
-										outline: none;
-										text-decoration: none;
-										-ms-interpolation-mode: bicubic;
-										border: none;
-										display: block;
-									"
-                                    src="https://raw.githubusercontent.com/konsav/email-templates/master/images/tracker.png" />
                             </td>
                         </tr>
-
-                        <!-- End of WRAPPER -->
                     </table>
-
-                    <!-- End of SECTION / BACKGROUND -->
                 </td>
             </tr>
         </table>
