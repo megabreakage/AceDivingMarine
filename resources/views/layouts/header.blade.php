@@ -26,7 +26,7 @@
                                     </li>
                                     @if ($page_data['services'] != null && (!empty($page_data['services']) || !isEmpty($page_data['services'])))
                                         <li class="menu-item-has-children">
-                                            <a href="{{ route('home') }}">Services</a>
+                                            <a href="{{ route('services') }}">Services</a>
                                             <ul>
                                                 @foreach ($page_data['services'] as $service)
                                                     <li>

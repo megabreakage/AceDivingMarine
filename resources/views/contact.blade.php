@@ -1,22 +1,21 @@
-@extends('site.layouts.master')
+@extends('layouts.master')
 
 @section('content')
-    @include('site.pages.components.inner-banner')
+    @include('layouts.includes.inner-banner')
 
     <div class="contact-page-section">
         <div class="contact-form-inner">
             <div class="container">
                 <div class="row">
-                    @include('admin.pages.components.errors-section')
+                    @include('layouts.includes.error-section')
                     <div class="col-md-6">
                         <div class="contact-from-wrap">
                             <div class="section-heading">
-                                <h5 class="dash-style">GET IN TOUCH</h5>
                                 <h2>CONTACT US TO GET MORE INFO</h2>
                                 <p>Feel free to reach out to us! We're here to assist you. Contact us today for more
                                     information and support.</p>
                             </div>
-                            <form class="contact-from" action="{{ route('submit-message') }}" method="post">
+                            <form class="contact-from" action="{{ route('submit-inquiry') }}" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -81,9 +80,6 @@
                     </div>
                     <div class="col-md-6">
                         <div class="contact-detail-wrap">
-                            <h3>Need help ?? Feel free to contact us !</h3>
-                            <p>If you find yourself in need of assistance, don't hesitate to reach out. We're here to help!
-                                Feel free to contact us anytime for support and guidance.</p>
                             <div class="details-list">
                                 <ul>
                                     <li>
@@ -116,13 +112,13 @@
                                 </ul>
                             </div>
                             <div class="contct-social social-links">
-                                <h3>Follow us on social media..</h3>
+                                <h3>Follow us on social media</h3>
                                 <ul>
-                                    <li><a href="https://facebook.com/royalchoicetravel" target="_blank"><i
+                                    <li><a href="https://facebook.com/acedivingmarine" target="_blank"><i
                                                 class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://twitter.com/royalchoiceKE" target="_blank"><i
+                                    <li><a href="https://twitter.com/acedivingmarine" target="_blank"><i
                                                 class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://instagram.com/royalchoicetravel" target="_blank"><i
+                                    <li><a href="https://instagram.com/acedivingmarine" target="_blank"><i
                                                 class="fab fa-instagram" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>

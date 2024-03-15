@@ -134,7 +134,23 @@ class PageController extends Controller
     public function contact_us()
     {
         $this->data = [
-            'title' => 'Services',
+            'title' => 'Contact Us',
+            'tagline' => $this->page['about']['tagline'],
+            'description' => 'Contact us to ge more information',
+            'keywords' => $this->page['about']['keywords'],
+            'image' => $this->page['about']['image'],
+            'logo' => $this->page['about']['logo'],
+            'url' => route('services'),
+            'page_data' => $this->page,
+        ];
+
+        return view('contact', $this->data);
+    }
+
+    public function faqs()
+    {
+        $this->data = [
+            'title' => 'FAQ',
             'tagline' => $this->page['about']['tagline'],
             'description' => $this->page['about']['description'],
             'keywords' => $this->page['about']['keywords'],
@@ -144,8 +160,23 @@ class PageController extends Controller
             'page_data' => $this->page,
         ];
 
-        return response()->json($this->data);
-        return view('contact_us', $this->data);
+        return view('contact', $this->data);
+    }
+
+    public function privacy_policy()
+    {
+        $this->data = [
+            'title' => 'Privacy Policy',
+            'tagline' => $this->page['about']['tagline'],
+            'description' => $this->page['about']['description'],
+            'keywords' => $this->page['about']['keywords'],
+            'image' => $this->page['about']['image'],
+            'logo' => $this->page['about']['logo'],
+            'url' => route('services'),
+            'page_data' => $this->page,
+        ];
+
+        return view('contact', $this->data);
     }
 
     public function submit_inquiry(StoreInquiryRequest $request)
@@ -156,20 +187,17 @@ class PageController extends Controller
             $mail_data = [
                 'title' => 'Customer Contact Form',
                 'subject' => $request->subject,
-                'body' => 'Here is the message from the customer: ' . $request->message,
+                'body' => $request->message,
                 'customer_name' => $request->firstname . ' ' . $request->lastname,
                 'customer_email' => $request->email,
+                'url' => config('app.url'),
             ];
 
-            $sent = Mail::to('a.gamble@acedivingmarine.com')
-                ->cc('info@acedivingmarine.com')
+            $sent = Mail::to('hr@acedivingmarine.com')
+                ->cc($request->email)
                 ->send(new CustomerInquiry($mail_data));
             if (!$sent)
                 throw new Exception('Your message has not been submitted successfully, try again later', 0);
-
-            Mail::to($request->email)
-                ->cc('info@acedivingmarine.com')
-                ->send(new InquirySubmited($mail_data));
 
             return Redirect::back()->with('success', 'Thank you, Your inquiry has been sent successfully.');
         } catch (\Throwable $th) {
