@@ -1085,7 +1085,7 @@ input[type=reset]:focus,
 input[type=submit]:hover,
 input[type=submit]:active,
 input[type=submit]:focus {
-  background-color: #A7238B;
+  background-color: #495057;
 }
 
 .button-primary,
@@ -1120,7 +1120,7 @@ input[type=submit]:focus {
 .button-secondary:hover,
 .button-secondary:focus,
 .button-secondary:active {
-  background-color: #A7238B;
+  background-color: #495057;
   color: #ffffff !important;
 }
 
@@ -1329,7 +1329,7 @@ input[type=submit]:focus {
 }
 
 .social-icon-wrap .social-linkedin a {
-  background-color: #A7238B;
+  background-color: #495057;
 }
 
 .social-icon-wrap .social-twitter a {
@@ -2996,14 +2996,14 @@ input[type=submit]:focus {
 }
 
 .desti-item .bg-meta-cat a {
-  background-color: #A7238B !important;
+  background-color: #495057 !important;
   color: #ffffff !important;
   padding: 7px 24px;
 }
 
 .desti-item .bg-meta-cat a:hover,
 .desti-item .bg-meta-cat a:focus {
-  background-color: #A7238B !important;
+  background-color: #495057 !important;
   color: #ffffff !important;
 }
 
@@ -6202,7 +6202,7 @@ procduct details css
 }
 
 .single-post-section .author-wrap .author-content .button-text:hover {
-  color: #A7238B;
+  color: #495057;
 }
 
 @media screen and (max-width: 575px) {
@@ -7151,7 +7151,7 @@ procduct details css
 }
 
 .search-section .button-container .button-text:hover {
-  color: #A7238B !important;
+  color: #495057 !important;
 }
 
 /*--------------------------------------------------------------
@@ -10073,7 +10073,7 @@ product checkout css
 }
 
 .desti-item .bg-meta-cat a {
-  background-color: #A7238B !important;
+  background-color: #495057 !important;
 }
 
 .desti-item .bg-meta-cat a:hover {
@@ -10114,16 +10114,16 @@ product checkout css
 }
 
 .package-wrap .package-price h6:hover {
-  background-color: #A7238B !important;
+  background-color: #495057 !important;
 }
 
 .package-wrap .package-price h6 a:hover {
   color: #FFF !important;
-  background-color: #A7238B !important;
+  background-color: #495057 !important;
 }
 
 .bg-meta-cat:hover {
-  background-color: #A7238B !important;
+  background-color: #495057 !important;
   color: #FFF !important
 }
 

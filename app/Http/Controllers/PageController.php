@@ -37,19 +37,19 @@ class PageController extends Controller
     {
         $sliders = [
             [
-                'title' => 'Ace Diving',
+                'title' => 'ACE Diving Marine Services',
                 'image' => 'slider-banner-1.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'Ace Diving',
+                'title' => 'ACE Diving Marine Services',
                 'image' => 'slider-banner-2.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'Ace Diving',
+                'title' => 'ACE Diving Marine Services',
                 'image' => 'slider-banner-3.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
