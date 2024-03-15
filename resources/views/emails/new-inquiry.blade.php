@@ -171,7 +171,7 @@
                                 <!-- LOGO -->
                                 <a target="_blank" style="text-decoration: none" href="{{ $mail_data['url'] }}"> <img
                                         border="0" vspace="0" hspace="0"
-                                        src="https://acedivingmarine.com/assets/images/Logos/rctl-logo.png"
+                                        src="https://acedivingmarine.com/assets/images/Logos/adm-logo-full.png"
                                         height="50" alt="Logo" title="Logo"
                                         style="
 											color: #000000;
