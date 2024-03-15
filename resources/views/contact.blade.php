@@ -12,8 +12,6 @@
                         <div class="contact-from-wrap">
                             <div class="section-heading">
                                 <h2>CONTACT US TO GET MORE INFO</h2>
-                                <p>Feel free to reach out to us! We're here to assist you. Contact us today for more
-                                    information and support.</p>
                             </div>
                             <form class="contact-from" action="{{ route('submit-inquiry') }}" method="post">
                                 @csrf

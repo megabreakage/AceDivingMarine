@@ -39,18 +39,30 @@ class PageController extends Controller
             [
                 'title' => 'ACE Diving Marine Services',
                 'image' => 'slider-banner-4.png',
-                'action_button' => 'View Our Services',
-                'button_url' => 'services',
+                'action_button' => 'Learn About Us',
+                'button_url' => 'about-us',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'ACE Diving Marine Services',
+                'title' => 'Construction Capabilities',
                 'image' => 'slider-banner-7.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'ACE Diving Marine Services',
+                'title' => 'Platform/Pipeline Capabilities',
                 'image' => 'slider-banner-8.png',
+                'action_button' => 'Learn More',
+                'button_url' => 'services',
+                'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
+            ], [
+                'title' => 'Subsea Services',
+                'image' => 'slider-banner-6.png',
+                'action_button' => 'View Our Services',
+                'button_url' => 'services',
+                'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
+            ], [
+                'title' => 'Underwater Inspection',
+                'image' => 'slider-banner-5.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
@@ -137,7 +149,7 @@ class PageController extends Controller
         $this->data = [
             'title' => 'Contact Us',
             'tagline' => $this->page['about']['tagline'],
-            'description' => 'Contact us to ge more information',
+            'description' => "Feel free to reach out to us! We\'re here to assist you. Contact us today for more information and support.",
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
             'logo' => $this->page['about']['logo'],
