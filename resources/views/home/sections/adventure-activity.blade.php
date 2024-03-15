@@ -5,8 +5,8 @@
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Our Services</h2>
                     <div class="title-icon-divider"><i class="fas fa-toolbox"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fuga inventore deserunt quas
-                        laboriosam ab earum accusamus in quam optio?</p>
+                    <p>Dive into excellence with our comprehensive marine diving services, offering expert solutions
+                        tailored to your needs with a focus on safety, sustainability, and customer satisfaction.</p>
                 </div>
             </div>
         </div>
