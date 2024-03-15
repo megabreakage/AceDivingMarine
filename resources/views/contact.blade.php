@@ -88,7 +88,7 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Location Address</h4>
-                                            <span>The Spur Mall, Suite B-79, Ruiru-Kenya</span>
+                                            <span>Dubai, UAE</span>
                                         </div>
                                     </li>
                                     <li>
@@ -97,7 +97,7 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Email Address</h4>
-                                            <span>deals@royalchoicetravel.com</span>
+                                            <span>{{ $page_data['emails'][1]['value'] }}</span>
                                         </div>
                                     </li>
                                     <li>
@@ -106,7 +106,7 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Phone Number</h4>
-                                            <span>Telephone: +(254)783 027-111</span>
+                                            <span>Telephone: {{ $page_data['phone_numbers'][1]['value'] }}</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -129,7 +129,7 @@
         </div>
         <div class="map-section">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0335934559957!2d36.9676588767597!3d-1.1363901354843893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fc955678a67%3A0xb42cac64d8e16dea!2sSpur%20Mall!5e0!3m2!1sen!2ske!4v1707134666329!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231280.41318740178!2d55.06267965750582!3d25.07624244771207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2ske!4v1710468145076!5m2!1sen!2ske"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
