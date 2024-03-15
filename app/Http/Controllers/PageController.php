@@ -37,20 +37,20 @@ class PageController extends Controller
     {
         $sliders = [
             [
-                'title' => 'Ace Diving',
-                'image' => 'slider-banner-1.png',
+                'title' => 'ACE Diving Marine Services',
+                'image' => 'slider-banner-4.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'Ace Diving',
-                'image' => 'slider-banner-2.png',
+                'title' => 'ACE Diving Marine Services',
+                'image' => 'slider-banner-7.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'Ace Diving',
-                'image' => 'slider-banner-3.png',
+                'title' => 'ACE Diving Marine Services',
+                'image' => 'slider-banner-8.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
@@ -81,7 +81,8 @@ class PageController extends Controller
         $this->data = [
             'title' => 'About Us',
             'tagline' => $this->page['about']['tagline'],
-            'description' => $this->page['about']['description'],
+            'description' => $this->page['about']['tagline'],
+            'overview' => $this->page['about']['description'],
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
             'logo' => $this->page['about']['logo'],
@@ -100,7 +101,7 @@ class PageController extends Controller
         $this->data = [
             'title' => 'Services',
             'tagline' => $this->page['about']['tagline'],
-            'description' => $this->page['about']['description'],
+            'description' => $this->page['about']['tagline'],
             'keywords' => $this->page['about']['keywords'],
             'image' => $this->page['about']['image'],
             'logo' => $this->page['about']['logo'],

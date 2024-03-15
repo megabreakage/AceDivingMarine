@@ -5,51 +5,54 @@
             <div class="section-heading">
                 <div class="row no-gutters align-items-end">
                     <div class="col-lg-6">
-                        <h2 style="color: #FFFFFF !important">WHY CHOOSE OUR SERVICES</h2>
+                        <h2 style="color: #FFFFFF !important">WHY CHOOSE OUR SERVICES?</h2>
                     </div>
                     <div class="col-lg-6">
                         <div class="section-disc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.Placeat nostrud natus tempora justo.
-                                Laboriosam, eget mus nostrud natus tempora.</p>
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing eliting dolor sit amet. Placeat
-                                nostrud natus tempora justo nostrud natus tempora.</p>
+                            <p>Choose us for diving and marine services for unrivaled expertise, safety, and
+                                environmental consciousness. With a track record of excellence, we guarantee exceptional
+                                experiences and sustainable solutions for every project.</p>
+                            <p>Trust us for reliable, efficient, and environmentally conscious diving and marine
+                                services.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-service-container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="about-service">
                             <div class="about-service-icon">
                                 <img src="{{ asset('assets/images/icon19.png') }}" alt="">
                             </div>
                             <div class="about-service-content">
-                                <h4 style="color: #FFFFFF !important">Certified</h4>
-                                <p>Lorem ipsum dolor sit amet, consec teturing.</p>
+                                <h4 style="color: #FFFFFF !important">We are Certified</h4>
+                                <p>Certified professionals dedicated to excellence, ensuring quality service tailored
+                                    to your needs and expectations.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="about-service">
                             <div class="about-service-icon">
                                 <img src="{{ asset('assets/images/icon20.png') }}" alt="">
                             </div>
                             <div class="about-service-content">
-                                <h4 style="color: #FFFFFF !important">Value for Money</h4>
-                                <p>Lorem ipsum dolor sit amet, consec teturing.</p>
+                                <h4 style="color: #FFFFFF !important">We offer Value for Money</h4>
+                                <p>Experience exceptional value with our services, delivering quality, reliability, and
+                                    satisfaction at competitive prices.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="about-service">
                             <div class="about-service-icon">
                                 <img src="{{ asset('assets/images/icon21.png') }}" alt="">
                             </div>
                             <div class="about-service-content">
-                                <h4 style="color: #FFFFFF !important">Experienced</h4>
-                                <p>Lorem ipsum dolor sit amet, consec teturing.</p>
+                                <h4 style="color: #FFFFFF !important">We are Environmentally Conscious</h4>
+                                <p>Committed to sustainability, we prioritize eco-friendly practices to protect and
+                                    preserve the environment.</p>
                             </div>
                         </div>
                     </div>

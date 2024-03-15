@@ -4,7 +4,7 @@
             @foreach ($sliders as $slider)
                 <div class="home-banner-items">
                     <div class="banner-inner-wrap"
-                        style="background-image: url({{ asset('assets/site/images/' . $slider['image']) }})"></div>
+                        style="background-image: url({{ asset('assets/images/Sliders/' . $slider['image']) }})"></div>
                     <div class="banner-content-wrap">
                         <div class="container">
                             <div class="banner-content text-center">

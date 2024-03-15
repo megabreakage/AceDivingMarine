@@ -6,8 +6,8 @@
                     <h2>PARTNER'S AND CLIENTS</h2>
                     <div class="title-icon-divider"><i class="fas fa-toolbox"></i></div>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officiis doloribus,
-                        natus voluptatem harum ducimus voluptatibus fugit beatae fuga
+                        Meet our esteemed partner, committed to excellence, innovation, and collaboration, serving our
+                        clients with integrity and unparalleled expertise.
                     </p>
                 </div>
             </div>
