@@ -62,8 +62,7 @@
 
         @include('layouts.includes.scripts')
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZ510 "></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BQS2PXMZ6"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
 
@@ -72,7 +71,7 @@
             }
             gtag('js', new Date());
 
-            gtag('config', 'G-NZ510 ');
+            gtag('config', 'G-9BQS2PXMZ6');
         </script>
 
         @yield('scripts')
