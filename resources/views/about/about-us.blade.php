@@ -13,15 +13,15 @@
                                 <h3>INTRO</h3>
                             </div>
                             <div class="about-img">
-                                <img src="{{ asset('assets/images/img9.jpg') }}" alt="">
+                                <img src="{{ asset('assets/images/repairs-360x450.png') }}" alt="">
                             </div>
                         </div>
                         <div class="about-img-right">
                             <div class="about-img">
-                                <img src="{{ asset('assets/images/img12.jpg') }}" alt="">
+                                <img src="{{ asset('assets/images/diver-about-455x330.png') }}" alt="">
                             </div>
                             <div class="about-img">
-                                <img src="{{ asset('assets/images/img34.jpg') }}" alt="">
+                                <img src="{{ asset('assets/images/about-diver-4-365x305.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                     <div class="banner-content section-heading">
                         <h2 class="banner-title">ACE DIVING & MARINE SERVICES</h2>
                         <div class="title-icon-divider"><i class="fas fa-toolbox"></i></div>
-                        <p>{{ $description }}
+                        <p>{{ $overview }}
                         </p>
                     </div>
                 </div>
