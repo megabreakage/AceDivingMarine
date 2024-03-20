@@ -31,7 +31,7 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(
         Route::get('services/add', [ServiceController::class, 'store'])->name('dashboard.store.service');
         Route::post('services/{id}/update', [ServiceController::class, 'update'])->name('dashboard.update.service');
         Route::post('services/{id}/publish', [ServiceController::class, 'publish'])->name('dashboard.publish.service');
-        Route::post('services/{id}/destroy', [ServiceController::class, 'publish'])->name('dashboard.publish.service');
+        Route::post('services/{id}/destroy', [ServiceController::class, 'destroy'])->name('dashboard.publish.service');
     }
 );
 
