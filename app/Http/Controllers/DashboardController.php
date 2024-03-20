@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
@@ -15,6 +16,11 @@ class DashboardController extends Controller
 
     public function index()
     {
+        $user = Auth::check() ? Auth::user() : null;
+        $this->data = [
+            'title' => 'Dashboard',
+            'user' => $user,
+        ];
         return view('admin.pages.dashboard', $this->data);
     }
 }

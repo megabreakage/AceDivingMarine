@@ -14,9 +14,9 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="col-md-12 text-right">
-                        <a href="{{ route('dashboard.package.create') }}" class="btn btn-outline-primary btn-rct"> <i
+                        <a href="{{ route('dashboard.create.service') }}" class="btn btn-outline-primary btn-rct"> <i
                                 class="fas fa-plus"></i>
-                            Add Package</a>
+                            Add Service</a>
                     </div>
                 </div>
             </div>
@@ -29,39 +29,26 @@
 
         <div class="dashboard-box">
             <div class="row">
-                @foreach ($destinations as $index => $destination)
+                @foreach ($services as $index => $service)
                     <div class="grid-item col-sm-6 col-12 col-md-4 col-lg-3">
                         <div class="package-wrap">
                             <figure class="feature-image">
-                                <a href="{{ route('dashboard.destination.edit', $destination['id']) }}"
-                                    class="package-list">
-                                    <img loading="lazy"
-                                        src="{{ asset('assets/site/images/Destinations/' . $destination['photo']) }}"
+                                <a href="{{ route('dashboard.show.service', $service['id']) }}" class="package-list">
+                                    <img loading="lazy" src="{{ asset('assets/images/diver-about-455x330.png') }}"
                                         alt="">
                                 </a>
                             </figure>
-                            <div class="package-price">
-                                <h6>
-                                    <span>{{ $destination['country']['name'] }} </span>
-                                </h6>
-                            </div>
                             <div class="package-content-wrap">
                                 <div class="package-content">
                                     <h4>
                                         <a
-                                            href="{{ route('dashboard.destination.edit', $destination['id']) }}">{{ $destination['name'] }}</a>
+                                            href="{{ route('dashboard.show.service', $service['id']) }}">{{ $service['name'] }}</a>
                                     </h4>
                                     <div class="content-details">
-                                        <span>Category: </span>
-                                        @foreach ($destination['categories'] as $item)
-                                            <span style="color: #E00E78">{{ $item['name'] }}</span>
-                                        @endforeach
-                                    </div>
-                                    <div class="content-details">
-                                        @if ($destination['published_at'] != null)
+                                        @if ($service['published_at'] != null)
                                             <span>Published on: </span>
                                             <span
-                                                class="review-text">{{ date('j M, Y h:i A', strtotime($destination['published_at'])) }}</span>
+                                                class="review-text">{{ date('j M, Y h:i A', strtotime($service['published_at'])) }}</span>
                                         @else
                                             <span class="badge badge-danger" style="color: #ED1824">In Active (Not
                                                 Published)</span>
@@ -69,10 +56,10 @@
                                     </div>
 
                                     <div class="button-container">
-                                        <a href="{{ route('destinations.show', $destination['slug']) }}" target="_blank">
+                                        <a href="{{ route('service.show', $service['slug']) }}" target="_blank">
                                             <i class="far fa-eye"></i>
                                             Preview</a>
-                                        <a href="{{ route('dashboard.destination.edit', $destination['id']) }}"><i
+                                        <a href="{{ route('dashboard.show.service', $service['id']) }}"><i
                                                 class="far fa-edit"></i>Edit</a>
 
                                     </div>

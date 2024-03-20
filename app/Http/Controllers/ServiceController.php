@@ -8,6 +8,7 @@ use App\Models\Service;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 
@@ -21,11 +22,14 @@ class ServiceController extends Controller
      */
     public function index()
     {
+        $user = Auth::check() ? Auth::user() : null;
         $this->data = [
+            'title' => 'Services',
             'services' => Service::all(),
+            'user' => $user,
         ];
 
-        return view('dash.service.list-services', $this->data);
+        return view('admin.pages.services.list-services', $this->data);
     }
 
     /**
@@ -33,7 +37,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('dash.service.add-service');
+        return view('admin.services.add-service');
     }
 
     /**
@@ -59,7 +63,6 @@ class ServiceController extends Controller
                 'name' => $request->name,
                 'slug' => $slug,
                 'description' => $request->description,
-                'description' => $request->description,
                 'overview' => $request->overview,
                 'keywords' => $request->keywords,
                 'photo' => $upload['new_name'],
@@ -84,12 +87,21 @@ class ServiceController extends Controller
         $service = Service::find($id);
 
         if (!$service) throw new Exception('Service not found', 0);
+        $user = Auth::check() ? Auth::user() : null;
+
+        $prevAndNextRecords = $this->getPrevAndNextRecords($service->id);
+        $prevPId = !$prevAndNextRecords['prevRecord'] ? null : $prevAndNextRecords['prevRecord']['id'];
+        $nextPId = !$prevAndNextRecords['nextRecord'] ? null : $prevAndNextRecords['nextRecord']['id'];
 
         $this->data = [
+            'title' => $service->name,
+            'prevPId' => $prevPId,
             'service' => $service,
+            'nextPId' => $nextPId,
+            'user' => $user,
         ];
 
-        return view('dash.service.show-service', $this->data);
+        return view('admin.pages.services.edit-service', $this->data);
     }
 
     /**
@@ -152,5 +164,21 @@ class ServiceController extends Controller
     public function destroy(Service $service)
     {
         //
+    }
+
+    /**
+     * Get the Records before & after a specific Record in the destination collection
+     * @param int $current_id
+     * @return array
+     */
+    private function getPrevAndNextRecords($current_id): array
+    {
+        $prevRecord = Service::where('id', '<', $current_id)->orderBy('id', 'Desc')->first();
+        $nextRecord = Service::where('id', '>', $current_id)->orderBy('id')->first();
+
+        return [
+            'prevRecord' => !$prevRecord ? null : $prevRecord,
+            'nextRecord' => !$nextRecord ? null : $nextRecord,
+        ];
     }
 }
