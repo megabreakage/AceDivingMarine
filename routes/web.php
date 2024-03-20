@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -21,7 +22,16 @@ Route::get('/privacy-policy', [PageController::class, 'privacy_policy'])->name('
  */
 Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(
     function () {
+        // Dashboard
         Route::get('', [DashboardController::class, 'index'])->name('dashboard');
+
+        // Services
+        Route::get('services', [ServiceController::class, 'index'])->name('dashboard.index.services');
+        Route::get('services/{id}', [ServiceController::class, 'show'])->name('dashboard.show.service');
+        Route::get('services/add', [ServiceController::class, 'store'])->name('dashboard.store.service');
+        Route::post('services/{id}/update', [ServiceController::class, 'update'])->name('dashboard.update.service');
+        Route::post('services/{id}/publish', [ServiceController::class, 'publish'])->name('dashboard.publish.service');
+        Route::post('services/{id}/destroy', [ServiceController::class, 'publish'])->name('dashboard.publish.service');
     }
 );
 
