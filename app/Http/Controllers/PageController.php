@@ -248,7 +248,7 @@ class PageController extends Controller
             'pages' => Page::all(),
             'page' => Page::find($id),
         ];
-        return view('admin.pages.seo-pages.all-pages', $this->data);
+        return view('admin.pages.seo-pages.view-seo-page', $this->data);
     }
 
     // 3. Add a new page
