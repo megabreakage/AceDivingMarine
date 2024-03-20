@@ -1,49 +1,48 @@
-            <header id="masthead" class="site-header header-primary">
-                <!-- header html start -->
+<div class="dashboard-header sticky-header">
+    <div class="content-left  logo-section pull-left">
+        <h1><a href="{{ route('dashboard') }}"><img src="{{ asset('assets/site/images/Logos/rctl-logo.png') }}"
+                    alt=""></a>
+        </h1>
+    </div>
+    <div class="heaer-content-right pull-right">
 
-                <div class="top-header">
+        {{-- @include('admin.layouts.notifications') --}}
+
+        <div class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <div class="dropdown-item profile-sec">
+                    <img loading="lazy" src="{{ asset('assets/admin/images/comment.jpg') }}" alt="">
+                    <span>Hi {{ $user['firstname'] }}, </span>
+                    <i class="fas fa-caret-down"></i>
                 </div>
-                <div class="bottom-header">
-                    <div class="container d-flex justify-content-between align-items-center">
-                        <div class="site-identity">
-                            <h1 class="site-title py-2">
-                                <a href="{{ route('home') }}">
-                                    <img loading="lazy" class="white-logo"
-                                        src="{{ asset('assets/images/Logos/adm-logo-full-wide.png') }}" alt="logo">
-                                    <img loading="lazy" class="black-logo"
-                                        src="{{ asset('assets/images/Logos/' . $logo) }}" alt="logo">
-                                </a>
-                            </h1>
-                        </div>
-                        <div class="main-navigation d-none d-lg-block">
-                            <nav id="navigation" class="navigation">
-                                <ul>
-                                    <li>
-                                        <a href="{{ route('home') }}">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('about-us') }}">About</a>
-                                    </li>
-                                    @if ($page_data['services'] != null && (!empty($page_data['services']) || !isEmpty($page_data['services'])))
-                                        <li class="menu-item-has-children">
-                                            <a href="{{ route('services') }}">Services</a>
-                                            <ul>
-                                                @foreach ($page_data['services'] as $service)
-                                                    <li>
-                                                        <a
-                                                            href="{{ route('service.show', $service['slug']) }}">{{ $service['name'] }}</a>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                    @endif
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header-btn">
-                            <a href="{{ route('contact-us') }}" class="button-primary">CONTACT US</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-menu-container"></div>
-            </header>
+            </a>
+            <div class="dropdown-menu account-menu">
+                <ul>
+                    <li><a href="{{ route('dashboard.user.show', $user['id']) }}"><i
+                                class="fas fa-user-tie"></i>Profile</a></li>
+                    <li><a href="{{ route('dashboard.user.edit', $user['id']) }}"><i class="fas fa-key"></i>Password</a>
+                    </li>
+                    <li class="mb-2">
+                        <form action="{{ route('logout') }}" method="post">
+                            @csrf
+                            <button style="border: none !important; background-color: #fff;">
+                                <span class="mx-2">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                Logout
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@include('admin.layouts.dashboard-navigation')
+
+<style>
+    .logo-section img loading="lazy" {
+        height: 50px !important;
+    }
+</style>

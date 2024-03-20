@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -15,9 +16,14 @@ Route::post('/submit-inquiry', [PageController::class, 'submit_inquiry'])->name(
 Route::get('/faqs', [PageController::class, 'faqs'])->name('faqs');
 Route::get('/privacy-policy', [PageController::class, 'privacy_policy'])->name('privacy-policy');
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+/**
+ * Dashboard Web Routes
+ */
+Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(
+    function () {
+        Route::get('', [DashboardController::class, 'index'])->name('dashboard');
+    }
+);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
