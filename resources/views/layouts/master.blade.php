@@ -4,8 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title> {{ $title }} - acedivingmarine.com |
-            {{ $tagline }} </title>
+        <title> {{ $title }} </title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content={{ $description }} />
@@ -14,15 +13,15 @@
         <meta name="keywords" content="{{ $keywords }}" />
         <meta name="facebook-domain-verification" content="956cb2fqf1khk " />
 
-        <meta itemprop="name" content="{{ $title }} - {{ $url }} | {{ $description }}">
-        <meta itemprop="title" content="{{ $title }} - {{ $url }} | {{ $description }}">
+        <meta itemprop="name" content="{{ $title }}">
+        <meta itemprop="title" content="{{ $title }}">
         <meta itemprop="description" content={{ $description }}>
         <meta itemprop="url" content="{{ $url }}">
         <meta itemprop="image" content="{{ asset('assets/images/Logos/' . $image) }}">
 
-        <meta property="og:title" content="{{ $title }} - {{ $url }} | {{ $description }}">
+        <meta property="og:title" content="{{ $title }}">
         <meta property="og:description" content={{ $description }}>
-        <meta property="og:site_name" content="{{ $title }} - {{ $url }} | {{ $description }}" />
+        <meta property="og:site_name" content="{{ $title }}" />
         <meta property="og:url" content="{{ $url }}">
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website">
@@ -32,7 +31,7 @@
         <meta property="og:image:type" content="image/png" />
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="{{ $title }} - {{ $url }} | {{ $description }}">
+        <meta name="twitter:title" content="{{ $title }}">
         <meta name="twitter:description" content={{ $description }}>
         <meta name="twitter:image" content="{{ asset('assets/images/Logos/' . $image) }}">
         <meta name="twitter:site" content="@acedivingmarine" />
