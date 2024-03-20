@@ -21,7 +21,7 @@
                                 <img src="{{ asset('assets/images/diver-about-455x330.png') }}" alt="">
                             </div>
                             <div class="about-img">
-                                <img src="{{ asset('assets/images/about-diver-3-365x305.png') }}" alt="">
+                                <img src="{{ asset('assets/images/diving-welding.png') }}" alt="">
                             </div>
                         </div>
                     </div>
