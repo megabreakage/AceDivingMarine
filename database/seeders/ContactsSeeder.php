@@ -15,7 +15,7 @@ class ContactsSeeder extends Seeder
             [
                 'name' => 'Info',
                 'contact_type_id' => 1,
-                'value' => 'info@acedivingmarine.com'
+                'value' => 'hr@acedivingmarine.com'
             ], [
                 'name' => 'Alternative',
                 'contact_type_id' => 1,
@@ -23,11 +23,11 @@ class ContactsSeeder extends Seeder
             ], [
                 'name' => 'International',
                 'contact_type_id' => 2,
-                'value' => '+(254)794 601-226'
+                'value' => '+(971)507 816-948'
             ], [
                 'name' => 'Mobile',
                 'contact_type_id' => 2,
-                'value' => '+(971)507 816-948'
+                'value' => '+(254)794 601-226'
             ], [
                 'name' => 'Instagram',
                 'contact_type_id' => 3,
