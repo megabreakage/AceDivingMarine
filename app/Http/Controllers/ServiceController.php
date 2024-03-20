@@ -50,7 +50,7 @@ class ServiceController extends Controller
                 $slug = $slug . '-' . rand(100, 99999);
             }
 
-            $upload = uploadImage($request, $slug, 'public/storage/images/services');
+            $upload = uploadImage($request, $slug, 'storage/uploads/images/services');
 
             if (!$upload['status']) throw new Exception('Uploading image failed, try again later', 0);
 

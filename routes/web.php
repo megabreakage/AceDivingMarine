@@ -32,6 +32,12 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(
         Route::post('services/{id}/update', [ServiceController::class, 'update'])->name('dashboard.update.service');
         Route::post('services/{id}/publish', [ServiceController::class, 'publish'])->name('dashboard.publish.service');
         Route::post('services/{id}/destroy', [ServiceController::class, 'destroy'])->name('dashboard.publish.service');
+
+        // SEO pages
+        Route::get('pages', [PageController::class, 'list_pages'])->name('dashboard.index.pages');
+        Route::get('pages/{id}', [PageController::class, 'show'])->name('dashboard.show.page');
+        Route::get('pages/add', [PageController::class, 'store'])->name('dashboard.store.page');
+        Route::post('pages/{id}/update', [PageController::class, 'update'])->name('dashboard.update.page');
     }
 );
 
