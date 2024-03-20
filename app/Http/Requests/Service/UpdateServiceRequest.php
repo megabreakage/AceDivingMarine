@@ -11,7 +11,14 @@ class UpdateServiceRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
+    }
+
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'featured' => $this->input('featured') == 'on' ? true : false,
+        ]);
     }
 
     /**
@@ -22,7 +29,11 @@ class UpdateServiceRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required', 'string', 'max:125'],
+            'description' => ['required', 'string', 'max:140'],
+            'overview' => ['required', 'string'],
+            'keywords' => ['required', 'string', ''],
+            'featured' => ['boolean']
         ];
     }
 }
