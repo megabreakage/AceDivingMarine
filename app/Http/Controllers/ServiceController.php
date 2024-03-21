@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Image\StoreImageRequest;
 use App\Http\Requests\Service\StoreServiceRequest;
 use App\Http\Requests\Service\UpdateServiceRequest;
 use App\Models\Service;
@@ -38,6 +39,36 @@ class ServiceController extends Controller
     public function create()
     {
         return view('admin.services.add-service');
+    }
+
+    public function update_photo(StoreImageRequest $request, $id)
+    {
+        $request->validated();
+
+        try {
+            $service = Service::find($id);
+
+            $slug = $service->slug;
+
+            $upload = uploadImage($request, $slug, 'assets/images/Services');
+
+            if (!$upload['status'])
+                throw new Exception($upload['message'], 0);
+
+            $record = $service->update([
+                'photo' => $upload['new_name'],
+            ]);
+
+            if (!$record)
+                throw new Exception('Updating service photo failed, Try again later.', 0);
+
+            return Redirect::back()->with('success', 'Service Photo updated successfully.');
+        } catch (\Throwable $th) {
+            $message = $th->getMessage();
+            if (config('app.env') == 'production')
+                $message = 'Updating service photo failed. Kindly try again.';
+            return Redirect::back()->with('error', $message);
+        }
     }
 
     /**
@@ -167,7 +198,7 @@ class ServiceController extends Controller
     }
 
     /**
-     * Get the Records before & after a specific Record in the destination collection
+     * Get the Records before & after a specific Record in the service collection
      * @param int $current_id
      * @return array
      */

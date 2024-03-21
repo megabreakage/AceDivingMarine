@@ -100,23 +100,24 @@
                                 <div>
 
                                     @if ($service['photo'] == '')
-                                        <img id="preview" loading="lazy" src="{{ asset('assets/images/img46.png') }}"
+                                        <img id="preview" loading="lazy" src="{{ asset('assets/images/service-1.jpg') }}"
                                             alt="">
                                     @else
-                                        <img id="preview" loading="lazy" src="{{ asset('assets/images/img46.png') }}"
-                                            alt="">
+                                        <img id="preview" loading="lazy"
+                                            src="{{ asset('assets/images/Services/' . $service['photo']) }}"
+                                            alt="Service Image">
                                     @endif
                                 </div>
                                 <div class="upload-input text-center">
-                                    <form action="{{ route('dashboard.update.service', $service['id']) }}" method="post"
-                                        enctype="multipart/form-data">
+                                    <form action="{{ route('dashboard.update.service.photo', $service['id']) }}"
+                                        method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="" style="border-radius: 0;">
                                             <!-- Photo upload requirements data -->
                                             <input id="mainPhoto" type="file" class="form-control p-2"
                                                 style="height: 45px" name="photo" onchange="previewFile()">
-                                            <input type="hidden" name="path" value="assets/site/images/Destinations/">
-                                            <input type="hidden" name="record" value="{{ 'Destination' }}">
+                                            <input type="hidden" name="path" value="assets/images/Services/">
+                                            <input type="hidden" name="record" value="{{ 'Service' }}">
                                             <input id="recordId" type="hidden" name="record_id"
                                                 value="{{ $service['id'] }}">
                                             <!-- -------------End----------- -->
@@ -224,7 +225,11 @@
                                                             @endif
                                                             <span class="custom-input-field"></span>
                                                             Mark as Featured
+
                                                         </label>
+                                                        <span style="font: 12px; color: #007BFF"><i>(Featured services
+                                                                will appear among the list of services on
+                                                                homepage)</i></span>
                                                     </div>
                                                 </div>
 
