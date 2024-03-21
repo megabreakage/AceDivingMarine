@@ -28,8 +28,8 @@
                                     </td>
                                     <td><a href="#"><span class="list-name">Mwangi Joseph</span></a>
                                     </td>
-                                    <td>(+254)704 583-989</td>
-                                    <td>mainajosephmwangi@gmail.com</td>
+                                    <td>+(254)794 601-226</td>
+                                    <td>a.gamble@acedivingmarine.com</td>
                                     <td>Kenya</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
@@ -50,8 +50,8 @@
                                     </td>
                                     <td><a href="#"><span class="list-name">Mwangi Joseph</span></a>
                                     </td>
-                                    <td>(+254)704 583-989</td>
-                                    <td>mainajosephmwangi@gmail.com</td>
+                                    <td>+(254)794 601-226</td>
+                                    <td>a.gamble@acedivingmarine.com</td>
                                     <td>Kenya</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
@@ -72,8 +72,8 @@
                                     </td>
                                     <td><a href="#"><span class="list-name">Mwangi Joseph</span></a>
                                     </td>
-                                    <td>(+254)704 583-989</td>
-                                    <td>mainajosephmwangi@gmail.com</td>
+                                    <td>+(254)794 601-226</td>
+                                    <td>a.gamble@acedivingmarine.com</td>
                                     <td>Kenya</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
@@ -94,8 +94,8 @@
                                     </td>
                                     <td><a href="#"><span class="list-name">Mwangi Joseph</span></a>
                                     </td>
-                                    <td>(+254)704 583-989</td>
-                                    <td>mainajosephmwangi@gmail.com</td>
+                                    <td>+(254)794 601-226</td>
+                                    <td>a.gamble@acedivingmarine.com</td>
                                     <td>Kenya</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
@@ -116,8 +116,8 @@
                                     </td>
                                     <td><a href="#"><span class="list-name">Mwangi Joseph</span></a>
                                     </td>
-                                    <td>(+254)704 583-989</td>
-                                    <td>mainajosephmwangi@gmail.com</td>
+                                    <td>+(254)794 601-226</td>
+                                    <td>a.gamble@acedivingmarine.com</td>
                                     <td>Kenya</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
@@ -138,8 +138,8 @@
                                     </td>
                                     <td><a href="#"><span class="list-name">Mwangi Joseph</span></a>
                                     </td>
-                                    <td>(+254)704 583-989</td>
-                                    <td>mainajosephmwangi@gmail.com</td>
+                                    <td>+(254)794 601-226</td>
+                                    <td>a.gamble@acedivingmarine.com</td>
                                     <td>Kenya</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
