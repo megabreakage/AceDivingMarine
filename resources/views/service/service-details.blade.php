@@ -5,12 +5,19 @@
 
     <div class="single-page-section">
         <div class="container">
-            <figure class="single-feature-img">
-                <img src="{{ asset('assets/images/img30.jpg') }}" alt="" width="100%">
-            </figure>
-            <div class="page-content">
-                <p>{!! $service['overview'] !!}</p>
+            <div class="row">
+                <div class="col-md-5">
+                    <figure class="single-feature-img">
+                        <img src="{{ asset('assets/images/Services/' . $service['photo']) }}" alt="" width="100%">
+                    </figure>
+                </div>
+                <div class="col-md-7">
+                    <div class="page-content">
+                        <p>{!! $service['overview'] !!}</p>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 @endsection
