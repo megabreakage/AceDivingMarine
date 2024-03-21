@@ -89,7 +89,7 @@ class PageController extends Controller
 
     public function about()
     {
-        $partners = ['logo11.png', 'logo10.png', 'logo9.png', 'logo8.png', 'logo7.png'];
+        $certs = ['logo-1.png', 'logo-2.png', 'logo-3.png', 'logo-4.png', 'logo-5.png'];
         $this->data = [
             'title' => 'About Us',
             'tagline' => $this->page['about']['tagline'],
@@ -100,10 +100,8 @@ class PageController extends Controller
             'logo' => $this->page['about']['logo'],
             'url' => route('about-us'),
             'page_data' => $this->page,
-            'partners' => $partners,
+            'certs' => $certs,
         ];
-
-        // return response()->json($this->data);
 
         return view('about.about-us', $this->data);
     }
