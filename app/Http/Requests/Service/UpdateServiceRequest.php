@@ -30,9 +30,9 @@ class UpdateServiceRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:125'],
-            'description' => ['required', 'string', 'max:140'],
+            'description' => ['required', 'string', 'max:200'],
             'overview' => ['required', 'string'],
-            'keywords' => ['required', 'string', ''],
+            'keywords' => ['required', 'string'],
             'featured' => ['boolean']
         ];
     }
