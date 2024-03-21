@@ -42,6 +42,12 @@
                             </div>
                         @endif
                     @endforeach
+                    <div class="col-md-12">
+                        <div class="btn-wrap text-center">
+                            <a href="{{ route('services') }}" class="button-primary text-uppercase">VIEW MORE
+                                SERVICES</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
