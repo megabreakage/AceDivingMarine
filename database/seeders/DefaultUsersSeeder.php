@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -45,7 +46,11 @@ class DefaultUsersSeeder extends Seeder
                     'lastname' => $user['lastname'],
                     'email' => $user['email'],
                     'phone_number' => $user['phone_number'],
-                    'password' => Hash::make($user['password'])
+                    'password' => Hash::make($user['password']),
+                    'active' => true,
+                    'email_verified_at' => Carbon::now(),
+                    'phone_verified_at' => Carbon::now(),
+                    'activated_at' => Carbon::now(),
                 ]
             );
 
