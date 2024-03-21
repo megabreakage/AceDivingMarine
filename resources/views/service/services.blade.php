@@ -16,7 +16,7 @@
                                         <a href="{{ route('service.show', $service['slug']) }}">{{ $service['name'] }}</a>
                                     </h3>
                                 </div>
-                                <p>{!! $service['description'] !!}</p>
+                                <p>{!! substr($service['description'], 0, 140) . '...' !!}</p>
                             </div>
                             <figure class="service-img">
                                 <a href="{{ route('service.show', $service['slug']) }}">
