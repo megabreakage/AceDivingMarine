@@ -20,8 +20,8 @@
                             </div>
                             <figure class="service-img">
                                 <a href="{{ route('service.show', $service['slug']) }}">
-                                    <img loading="lazy" src="{{ asset('assets/images/img30.jpg') }}" alt=""
-                                        style="width: 100%">
+                                    <img loading="lazy" src="{{ asset('assets/images/Services/' . $service['photo']) }}"
+                                        alt="" style="width: 100%">
                                 </a>
                             </figure>
                         </div>
