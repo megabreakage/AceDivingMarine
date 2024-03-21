@@ -1,6 +1,6 @@
 <div class="dashboard-header sticky-header">
     <div class="content-left  logo-section pull-left">
-        <h1><a href="{{ route('dashboard') }}"><img src="{{ asset('assets/site/images/Logos/rctl-logo.png') }}"
+        <h1><a href="{{ route('dashboard') }}"><img src="{{ asset('assets/images/Logos/adm-logo-full.png') }}"
                     alt=""></a>
         </h1>
     </div>
@@ -11,7 +11,7 @@
         <div class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown">
                 <div class="dropdown-item profile-sec">
-                    <img loading="lazy" src="{{ asset('assets/admin/images/comment.jpg') }}" alt="">
+                    <img loading="lazy" src="{{ asset('assets/admin/images/comment4.jpg') }}" alt="">
                     <span>Hi {{ $user['firstname'] }}, </span>
                     <i class="fas fa-caret-down"></i>
                 </div>
