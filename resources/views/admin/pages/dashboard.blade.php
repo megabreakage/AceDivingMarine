@@ -76,7 +76,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -92,7 +92,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment2.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -108,7 +108,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment3.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -124,7 +124,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment4.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -140,7 +140,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment5.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -178,7 +178,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -194,7 +194,7 @@
                                     <td><span class="list-img"><img loading="lazy"
                                                 src="{{ asset('assets/admin') }}/images/comment2.jpg" alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -211,7 +211,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment3.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -228,7 +228,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment4.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -245,7 +245,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment5.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><span class="list-enq-name">Mwangi Maina</span>
+                                    <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
                                     <td>Kenya</td>
@@ -285,7 +285,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><a href="#"><span class="list-name">Joseph Mwangi</span><span
+                                    <td><a href="#"><span class="list-name">Gamble Asa</span><span
                                                 class="list-enq-city">Kenya</span></a>
                                     </td>
                                     <td>(+254)704 583-989</td>
@@ -309,7 +309,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment2.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><a href="#"><span class="list-name">Joseph Mwangi</span><span
+                                    <td><a href="#"><span class="list-name">Gamble Asa</span><span
                                                 class="list-enq-city">Kenya</span></a>
                                     </td>
                                     <td>(+254)704 583-989</td>
@@ -333,7 +333,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment3.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><a href="#"><span class="list-name">Joseph Mwangi</span><span
+                                    <td><a href="#"><span class="list-name">Gamble Asa</span><span
                                                 class="list-enq-city">Kenya</span></a>
                                     </td>
                                     <td>(+254)704 583-989</td>
@@ -357,7 +357,7 @@
                                                 src="{{ asset('assets/admin') }}/images/comment4.jpg"
                                                 alt=""></span>
                                     </td>
-                                    <td><a href="#"><span class="list-name">Joseph Mwangi</span><span
+                                    <td><a href="#"><span class="list-name">Gamble Asa</span><span
                                                 class="list-enq-city">Kenya</span></a>
                                     </td>
                                     <td>(+254)704 583-989</td>
@@ -409,13 +409,13 @@
                         <li>
                             <i class="far fa-calendar-alt"></i>
                             <small>25 mins ago</small>
-                            <h5>Joseph Mwangi left a review on Hotel</h5>
+                            <h5>Gamble Asa left a review on Hotel</h5>
                             <a href="#" class="close-icon"><i class="fas fa-times"></i></a>
                         </li>
                         <li>
                             <i class="far fa-calendar-alt"></i>
                             <small>25 mins ago</small>
-                            <h5>Joseph Mwangi left a review on Hotel</h5>
+                            <h5>Gamble Asa left a review on Hotel</h5>
                             <a href="#" class="close-icon"><i class="fas fa-times"></i></a>
                         </li>
                         <li>
