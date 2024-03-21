@@ -4,6 +4,7 @@ use App\Jobs\SendSMS;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 /**
@@ -41,7 +42,7 @@ function generate_initials($string): string
  * @param $string
  * @return array
  */
-function processStrings(array $strings): array 
+function processStrings(array $strings): array
 {
     $newArray = [];
 
@@ -54,13 +55,13 @@ function processStrings(array $strings): array
             $firstCharacters = strtoupper(substr($string, 0, 2));
         } elseif (count($words) === 2) {
             // If the string has two words, get the first character of each word
-            foreach ($words as $word) { 
+            foreach ($words as $word) {
                 $firstCharacters .= strtoupper(substr($word, 0, 1));
             }
         }
 
         // Add the concatenated characters to the new array
-        $newArray[] = ['name'=> $string, 'shortCode' => $firstCharacters];
+        $newArray[] = ['name' => $string, 'shortCode' => $firstCharacters];
     }
 
     return $newArray;
@@ -89,13 +90,121 @@ function reset_passwords($email): bool
 {
     $user = User::where("email", $email)->first();
     $user->password = Hash::make("secretpassword");
-    if ($user->save()){
-        Log::info("User PASSWORD-RESET >> Success. ID: ".$user->id);
+    if ($user->save()) {
+        Log::info("User PASSWORD-RESET >> Success. ID: " . $user->id);
         return true;
     }
 
-    Log::info("User PASSWORD-RESET >> Failed. ID: ".$user->id);
+    Log::info("User PASSWORD-RESET >> Failed. ID: " . $user->id);
     return false;
+}
+
+/**
+ * Uploads an image
+ * @param object $request
+ * @param string $slug
+ * @param string $path
+ * @return array
+ */
+function uploadImage($request, $slug, $path): array
+{
+    try {
+        $imageName = time() . '-' . $slug . '.' . $request->photo->extension();
+        $request->photo->move(public_path($path), $imageName);
+
+        return [
+            'status' => true,
+            'new_name' => $imageName,
+        ];
+    } catch (\Exception $e) {
+        return [
+            'status' => false,
+            'message' => 'Image upload failed. ' . $e->getMessage(),
+        ];
+    }
+}
+
+/**
+ * Uploads an image
+ * @param object $request
+ * @param string $slug
+ * @param string $path
+ * @return array
+ */
+function uploadMultipleImages($request, $slug, $path): array
+{
+    try {
+        $photos = $request->file('photos');
+        $new_photos = [];
+        foreach ($photos as $index => $photo) {
+            $photo_name = $slug . '-' . time() + $index . '.' . $photo->extension();
+            $move = $photo->move(public_path($path), $photo_name);
+            if (!$move)
+                throw new Exception('Uploading photos failed, try again');
+            array_push($new_photos, $photo_name);
+        }
+
+        return [
+            'status' => true,
+            'new_photos' => $new_photos,
+        ];
+    } catch (\Exception $e) {
+        return [
+            'status' => false,
+            'message' => 'Image upload failed. ' . $e->getMessage(),
+        ];
+    }
+}
+
+/**
+ * Uploads images
+ * @param object $image
+ * @param string $path
+ * @param string $slug
+ * @return array 
+ */
+function uploadPhoto($request, $path, $slug): array
+{
+    try {
+        $imageName = time() . '-' . $slug . '.' . $request->photo->extension();
+        $request->photo->move(public_path($path), $imageName);
+
+        return [
+            'status' => true,
+            'message' => 'Image uploaded successfully.',
+            'new_name' => $imageName,
+        ];
+    } catch (\Exception $e) {
+        return [
+            'status' => false,
+            'message' => 'Image upload failed. ' . $e->getMessage(),
+        ];
+    }
+}
+
+function deleteImage($imageName, $path)
+{
+    // Specify the storage disk (e.g., 'public' or 'local')
+    $disk = 'public';
+
+    // Construct the full path to the image
+    $filePath = $path . '/' . $imageName;
+
+    // Delete the image
+    try {
+        if (Storage::disk($disk)->exists($filePath)) {
+            $response = Storage::disk($disk)->delete($filePath);
+            if ($response) return [
+                'status' => true,
+                'message' => 'Image deleted successfully'
+            ];
+        }
+    } catch (\Throwable $th) {
+        return [
+            'status' => false,
+            'message' => $th->getMessage(),
+        ];
+    }
 }
 
 /**
@@ -103,7 +212,6 @@ function reset_passwords($email): bool
  * @param string $string
  * @return string
  */
-
 function getControllerName($string)
 {
     $pices = explode('\\', $string);
@@ -136,7 +244,7 @@ function get_date_difference($start_date, $end_date, $inclusive = false): int
  */
 function format_phone_number($phoneNumber): int
 {
-    if (strlen($phoneNumber) > 12 and strpos($phoneNumber, 'dup') !== false){
+    if (strlen($phoneNumber) > 12 and strpos($phoneNumber, 'dup') !== false) {
         $phoneNumber = substr($phoneNumber, 0, 12);
     }
     if (strlen($phoneNumber) == 9) $phoneNumber = str_pad($phoneNumber, 10, "0", STR_PAD_LEFT);
@@ -217,7 +325,7 @@ function send_sms($phone_number, $message): void
  * @param string $md5
  * @return bool
  */
-function check_md5_passwords(string $md5 =''): bool
+function check_md5_passwords(string $md5 = ''): bool
 {
     return preg_match('/^[a-f0-9]{32}$/', $md5);
 }
@@ -230,18 +338,17 @@ function check_md5_passwords(string $md5 =''): bool
  */
 function mask_phone_number($number): string
 {
-    $middle_string ="";
+    $middle_string = "";
     $length = strlen($number);
-    if( $length < 3 ){
-        return $length == 1 ? "*" : "*". substr($number,  - 1);
-    }
-    else{
-        $part_size = floor( $length / 3 ) ;
-        $middle_part_size = $length - ( $part_size * 2 );
-        for( $i=0; $i < $middle_part_size ; $i ++ ){
+    if ($length < 3) {
+        return $length == 1 ? "*" : "*" . substr($number,  -1);
+    } else {
+        $part_size = floor($length / 3);
+        $middle_part_size = $length - ($part_size * 2);
+        for ($i = 0; $i < $middle_part_size; $i++) {
             $middle_string .= "*";
         }
-        return  substr($number, 0, $part_size ) . $middle_string  . substr($number,  - $part_size );
+        return  substr($number, 0, $part_size) . $middle_string  . substr($number,  -$part_size);
     }
 }
 
@@ -253,11 +360,11 @@ function mask_phone_number($number): string
  */
 function mask_email($email)
 {
-    $em   = explode("@",$email);
-    $name = implode('@', array_slice($em, 0, count($em)-1));
-    $len  = floor(strlen($name)/2);
+    $em   = explode("@", $email);
+    $name = implode('@', array_slice($em, 0, count($em) - 1));
+    $len  = floor(strlen($name) / 2);
 
-    return substr($name,0, $len) . str_repeat('*', $len) . "@" . end($em);
+    return substr($name, 0, $len) . str_repeat('*', $len) . "@" . end($em);
 }
 
 /**
@@ -268,18 +375,14 @@ function mask_email($email)
 function greetings(): string
 {
 
-    if(date("H") < 12){
+    if (date("H") < 12) {
 
-      return "Good Morning";
+        return "Good Morning";
+    } elseif (date("H") > 11 && date("H") < 18) {
 
-    } elseif(date("H") > 11 && date("H") < 18){
+        return "Good Afternoon";
+    } elseif (date("H") > 17) {
 
-      return "Good Afternoon";
-
-    } elseif(date("H") > 17){
-
-      return "Good Evening";
-
+        return "Good Evening";
     }
-
- }
+}

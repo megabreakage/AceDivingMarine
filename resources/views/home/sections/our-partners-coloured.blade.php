@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="section-heading text-center">
-                    <h5 class="dash-style">OUR ASSOCAITES</h5>
-                    <h2>PARTNER'S AND CLIENTS</h2>
+                    <h5 class="dash-style">OUR ACCOLADES</h5>
+                    <h2>CERTIFICATIONS</h2>
                     <p>
-                        Meet our esteemed partner, committed to excellence, innovation, and collaboration, serving our
-                        clients with integrity and unparalleled expertise
+                        IMCA approved and ISO certified Petrodive is recognized and approved by the majority of the IACS
+                        member certification bodies.
                     </p>
                 </div>
             </div>

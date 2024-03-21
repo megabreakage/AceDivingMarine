@@ -17,7 +17,7 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'name' => 'Service 1',
+                'name' => 'ROV & Survey Services',
                 'description' => 'Service 1 Description',
                 'overview' => 'Service 1 Description Overview',
                 'keywords' => 'Service 1 Keywords',
@@ -25,7 +25,7 @@ class ServiceSeeder extends Seeder
                 'icon' => 'sv1.png',
                 'featured' => true,
             ], [
-                'name' => 'Service 2',
+                'name' => 'Subsea Service',
                 'description' => 'Service 2 Description',
                 'overview' => 'Service 2 Description Overview',
                 'keywords' => 'Service 2 Keywords',
@@ -33,7 +33,47 @@ class ServiceSeeder extends Seeder
                 'icon' => 'sv1.png',
                 'featured' => true,
             ], [
-                'name' => 'Service 3',
+                'name' => 'Marine Services',
+                'description' => 'Service 3 Description',
+                'overview' => 'Service 3 Description Overview',
+                'keywords' => 'Service 3 Keywords',
+                'photo' => 'service-1.jpg',
+                'icon' => 'sv1.png',
+                'featured' => true,
+            ], [
+                'name' => 'Construction Capabilities',
+                'description' => 'Service 3 Description',
+                'overview' => 'Service 3 Description Overview',
+                'keywords' => 'Service 3 Keywords',
+                'photo' => 'service-1.jpg',
+                'icon' => 'sv1.png',
+                'featured' => true,
+            ], [
+                'name' => 'Salvage Capabilities',
+                'description' => 'Service 3 Description',
+                'overview' => 'Service 3 Description Overview',
+                'keywords' => 'Service 3 Keywords',
+                'photo' => 'service-1.jpg',
+                'icon' => 'sv1.png',
+                'featured' => true,
+            ], [
+                'name' => 'Environment Support Capabilities',
+                'description' => 'Service 3 Description',
+                'overview' => 'Service 3 Description Overview',
+                'keywords' => 'Service 3 Keywords',
+                'photo' => 'service-1.jpg',
+                'icon' => 'sv1.png',
+                'featured' => true,
+            ], [
+                'name' => 'Underwater Inspection Capabilities',
+                'description' => 'Service 3 Description',
+                'overview' => 'Service 3 Description Overview',
+                'keywords' => 'Service 3 Keywords',
+                'photo' => 'service-1.jpg',
+                'icon' => 'sv1.png',
+                'featured' => true,
+            ], [
+                'name' => 'Platform/Pipeline Capabilities',
                 'description' => 'Service 3 Description',
                 'overview' => 'Service 3 Description Overview',
                 'keywords' => 'Service 3 Keywords',

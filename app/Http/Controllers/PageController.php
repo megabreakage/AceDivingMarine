@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Page\StorePageRequest;
+use App\Http\Requests\Page\UpdatePageRequest;
 use App\Http\Requests\StoreInquiryRequest;
 use App\Mail\CustomerInquiry;
-use App\Mail\InquirySubmited;
 use App\Models\About;
 use App\Models\Contact;
+use App\Models\Page;
 use App\Models\Service;
 use Exception;
-use GuzzleHttp\Psr7\Response;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
-use Throwable;
+use Illuminate\Support\Str;
 
 class PageController extends Controller
 {
@@ -218,4 +218,102 @@ class PageController extends Controller
             return Redirect::back()->with('error', $th->getMessage());
         }
     }
+
+    /**
+     * END SITE PAGES FUNCTIONS
+     * ---------------------------------------------------------------------------------
+     */
+
+
+    /**
+     * START 
+     * DASHBOARD FUNCTIONS 
+     * ---------------------------------------------------------------------------------
+     */
+
+    //  1. List All the Pages
+    public function list_pages()
+    {
+        $this->data = [
+            'pages' => Page::all(),
+        ];
+
+        return view('admin.pages.seo-pages.all-pages', $this->data);
+    }
+
+    // 2. Show single page details
+    public function show($id)
+    {
+        $this->data = [
+            'pages' => Page::all(),
+            'page' => Page::find($id),
+        ];
+        return view('admin.pages.seo-pages.view-seo-page', $this->data);
+    }
+
+    // 3. Add a new page
+    public function store(StorePageRequest $request)
+    {
+        $request->validated();
+
+        try {
+            $slug = Str::slug($request->name);
+
+            $exists = Page::where('slug', $slug)->exists();
+
+            while ($exists) {
+                $slug = $slug . '-' . rand(100, 9999);
+            }
+
+            $upload = uploadImage($request, $slug, 'storage/uploads/images/pages');
+
+            if (!$upload['status']) throw new Exception('Uploading Page Image failed, try again later!', 0);
+
+            $record = Page::create([
+                'identifier' => generate_identifier(),
+                'name' => $request->name,
+                'slug' => $slug,
+                'description' => $request->description,
+                'image' => $upload['new_name'],
+                'keywords' => $request->keywords,
+            ]);
+
+            if (!$record) throw new Exception('Creating a new Page failed, try again later!', 0);
+
+            return Redirect::back()->with('success', 'Page created successfully.');
+        } catch (\Throwable $th) {
+            $this->message = config('app.env') == 'production' ? 'Creating a new Page failed, try again later!' : $th->getMessage();
+            return Redirect::back()->with('error', $this->message());
+        }
+    }
+
+    // 4. Update details of a page
+    public function update(UpdatePageRequest $request, $id)
+    {
+        $request->validated();
+
+        try {
+            $page = Page::find($id);
+            if (!$page) throw new Exception('Page not found!', 0);
+
+            $update = $page->update($request->all());
+
+            if (!$update) throw new Exception('Updating Page failed, try again later!', 0);
+            return Redirect::back()->with('success', 'Page updated successfully.');
+        } catch (\Throwable $th) {
+            $this->message = config('app.env') == 'production' ? 'Updating Page failed, try again later!' : $th->getMessage();
+            return Redirect::back()->with('error', $this->message());
+        }
+    }
+
+    // 5. Destroy a page
+    public function destroy($id)
+    {
+        //
+    }
+
+    /**
+     * END DASHBOARD FUNCTIONS
+     * ---------------------------------------------------------------------------------
+     */
 }
