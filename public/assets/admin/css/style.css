@@ -2377,9 +2377,9 @@ login form css
 }
 
 .btn-rct {
-  border: 1px solid #A7238B;
+  border: 1px solid #006EB6;
   background-color: #ffffff;
-  color: #A7238B;
+  color: #006EB6;
   font-size: 13px;
   padding: 5px 25px;
   -webkit-transition: all 0.4s;
@@ -2390,7 +2390,7 @@ login form css
 }
 
 .btn-rct:hover {
-  background-color: #A7238B;
+  background-color: #006EB6;
   color: #FFF;
   border: 1px solid #FFF;
 }
@@ -2415,7 +2415,7 @@ login form css
 }
 
 .text-rct-secondary {
-  color: #A7238B;
+  color: #006EB6;
 }
 
 .badge-success {

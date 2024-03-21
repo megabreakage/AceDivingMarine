@@ -34,8 +34,8 @@
                         <div class="package-wrap">
                             <figure class="feature-image">
                                 <a href="{{ route('dashboard.show.service', $service['id']) }}" class="package-list">
-                                    <img loading="lazy" src="{{ asset('assets/images/diver-about-455x330.png') }}"
-                                        alt="">
+                                    <img loading="lazy" src="{{ asset('assets/images/Services/' . $service['photo']) }}"
+                                        alt="{{ $service['name'] }}">
                                 </a>
                             </figure>
                             <div class="package-content-wrap">

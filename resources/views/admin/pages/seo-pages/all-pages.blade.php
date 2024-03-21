@@ -47,7 +47,7 @@
                                 <td class="text-center">{{ count($page['contents']) }}</td>
                                 <td class="text-center">{{ $page['link_position'] }}</td>
                                 <td><span class="badge badge-{{ $page['active'] ? 'success' : 'danger' }}"
-                                        style="background-color: #A7238B">{{ $page['active'] ? 'Active' : 'In-Active' }}</span>
+                                        style="background-color: #006EB6">{{ $page['active'] ? 'Active' : 'In-Active' }}</span>
                                 </td>
                                 <td> {{ $page['created_at']->format('j M, Y h:i A') }} </td>
                                 <td>

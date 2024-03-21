@@ -162,9 +162,9 @@
 
                                 <div class="row">
                                     <div class="preview-button col-lg-12 col-sm-12 col-12 mt-3 text-right">
-                                        <h5 style="color: #A7238B;">
+                                        <h5 style="color: #006EB6;">
                                             <a href="{{ route('service.show', $service['slug']) }}" target="_blank"
-                                                style="border: 0.8px solid #A7238B; padding: 5px 10px;">Preview
+                                                style="border: 0.8px solid #006EB6; padding: 5px 10px;">Preview
                                                 Service</a>
                                         </h5>
                                     </div>
