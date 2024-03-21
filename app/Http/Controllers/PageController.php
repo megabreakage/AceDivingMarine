@@ -69,7 +69,7 @@ class PageController extends Controller
             ]
         ];
 
-        $partners = ['logo11.png', 'logo10.png', 'logo9.png', 'logo8.png', 'logo7.png'];
+        $certs = ['logo-1.png', 'logo-2.png', 'logo-3.png', 'logo-4.png', 'logo-5.png'];
 
         $this->data = [
             'title' => $this->page['about']['name'],
@@ -79,7 +79,7 @@ class PageController extends Controller
             'image' => $this->page['about']['image'],
             'logo' => $this->page['about']['logo'],
             'url' => 'acedivingmarine.com',
-            'partners' => $partners,
+            'certs' => $certs,
             'sliders' => $sliders,
             'page_data' => $this->page,
         ];
