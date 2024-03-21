@@ -1,5 +1,5 @@
 <div id="whyRoyalChoice" class="fullwidth-callback"
-    style="background-image: url({{ asset('assets/images/Sliders/slider-banner-1.png') }})">
+    style="background-image: url({{ asset('assets/images/Sliders/slider-banner-4.png') }})">
     <div class="container">
         <div class="about-service-wrap" style="color: #FFFFFF !important">
             <div class="section-heading">

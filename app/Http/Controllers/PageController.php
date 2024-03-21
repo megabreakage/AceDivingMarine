@@ -43,29 +43,29 @@ class PageController extends Controller
                 'button_url' => 'about-us',
                 'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
             ], [
-                'title' => 'Construction Capabilities',
-                'image' => 'slider-banner-7.png',
+                'title' => 'Marine Services',
+                'image' => 'slider-banner-11.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
-                'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
+                'description' => 'We offer a wide range of marine services, including fabrication design and construction, as well as turnkey project management'
             ], [
                 'title' => 'Platform/Pipeline Capabilities',
-                'image' => 'slider-banner-8.png',
+                'image' => 'slider-banner-9.png',
                 'action_button' => 'Learn More',
                 'button_url' => 'services',
-                'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
+                'description' => 'Marine infrastructure includes the platforms, subsea structures, pipelines, and cables crucial to our offshore activities in oil and gas, energy, and telecom.'
             ], [
-                'title' => 'Subsea Services',
-                'image' => 'slider-banner-6.png',
+                'title' => 'ROV & Surveys',
+                'image' => 'slider-banner-12.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
-                'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
+                'description' => ' ACE Diving & Marine Services supplies experienced professionals. Complete Diving, ROV, Survey and Marine Construction personnel'
             ], [
-                'title' => 'Underwater Inspection',
+                'title' => 'Construction Capabilities',
                 'image' => 'slider-banner-5.png',
                 'action_button' => 'View Our Services',
                 'button_url' => 'services',
-                'description' => 'ACE Diving & Marine Services is a leading provider of marine construction and infrastructure support services that has satisfied clients with 24-hour service'
+                'description' => 'Our marine experience and capabilities include the delivery and construction of maritime infrastructure with varying sizes and technical complexity.'
             ]
         ];
 

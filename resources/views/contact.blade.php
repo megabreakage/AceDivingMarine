@@ -11,7 +11,8 @@
                     <div class="col-md-6">
                         <div class="contact-from-wrap">
                             <div class="section-heading">
-                                <h2>For more Information, Feel Free to contact us.</h2>
+                                <h2>For more Information</h2>
+                                <p>Fill out this form and we will get back to you as soon as possible</p>
                             </div>
                             <form class="contact-from" action="{{ route('submit-inquiry') }}" method="post">
                                 @csrf
