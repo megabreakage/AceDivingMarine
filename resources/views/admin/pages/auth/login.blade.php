@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- favicon -->
-        <link rel="icon" type="image/png" href="{{ asset('assets/admin/images/favicon.png') }}">
+        <link rel="icon" type="image/ico" href="{{ asset('assets/images/Logos/favicon.ico') }}">
 
         @include('admin.layouts.styles')
 
@@ -21,7 +21,7 @@
                         @csrf
                         <h1 class="site-title">
                             <a href="{{ route('home') }}" class="auth-logo">
-                                <img loading="lazy" src="{{ asset('assets/admin/images/Logos/rct-monochrom.png') }}"
+                                <img loading="lazy" src="{{ asset('assets/images/Logos/adm-logo.png') }}"
                                     alt="">
                             </a>
                         </h1>

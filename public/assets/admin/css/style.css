@@ -2338,7 +2338,6 @@ login form css
 
 /* Breakage */
 .login-page {
-  background-image: url('../../admin/images/Auth/rct-auth-bg-2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
