@@ -18,7 +18,8 @@ Route::get('privacy-policy', [PageController::class, 'privacy_policy'])->name('p
 /**
  * Dashboard Web Routes
  */
-Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(function () {
+// Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(function () {
+Route::prefix('dashboard')->group(function () {
 
     // Dashboard
     Route::get('', [DashboardController::class, 'index'])->name('dashboard');
