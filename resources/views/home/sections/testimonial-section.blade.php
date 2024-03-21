@@ -11,12 +11,13 @@
                                 alt="">
                         </figure>
                         <div class="testimonial-content">
-                            <p>"My beach tour to Kisite Mpunguti Marine Park with RoyalChoice Travel was nothing short
+                            <p>"My beach tour to Kisite Mpunguti Marine Park with ACE Diving & Marine Services was
+                                nothing short
                                 of extraordinary. </p>
                             <p>The team's expertise, passion for wildlife, and commitment to
                                 sustainable tourism made the journey unforgettable. They seamlessly blended adventure
                                 and luxury, providing a perfect balance. If you're seeking a top-tier travel experience
-                                with an eco-conscious focus, RoyalChoice Travel is the ideal choice."</p>
+                                with an eco-conscious focus, ACE Diving & Marine Services is the ideal choice."</p>
                             <cite>
                                 Martin Njuguna
                                 <span class="company">Customer</span>
@@ -47,7 +48,8 @@
                                 alt="">
                         </figure>
                         <div class="testimonial-content">
-                            <p>"RoyalChoice Travel offers wonderful adventure and tailored itinerary that meets to their
+                            <p>"ACE Diving & Marine Services offers wonderful adventure and tailored itinerary that
+                                meets to their
                                 clients' needs and expectations. Their rates, so far are affordable to meet to different
                                 clients' financial capability and range as high up as luxury can cost to even rustic
                                 experiences for those who prefer that.</p>
@@ -118,7 +120,7 @@
                         </figure>
                         <div class="testimonial-content">
                             <p>"Highly professional and easily assist in making informed decisions. Definitely the best
-                                Tour operator in Kenya I'd recommend"</p>
+                                Tour operator in Dubai I'd recommend"</p>
                             <cite>
                                 Sammy Muhoro
                                 <span class="company">Customer</span>
@@ -160,7 +162,7 @@
             </div>
             <div class="col-lg-10 offset-lg-1">
                 <div class="btn-wrap text-center text-uppercase">
-                    <a href="https://www.google.com/maps/place/RoyalChoice+Travel+Limited+-+Travel+Agency+in+Kenya+for+Safari+Tours,+Beach+Holiday+Packages,+Staycations+and+More/@-1.14825,36.9604534,17z/data=!4m18!1m9!3m8!1s0x182f47c8d223c873:0xa521e9f494527ad1!2sRoyalChoice+Travel+Limited+-+Travel+Agency+in+Kenya+for+Safari+Tours,+Beach+Holiday+Packages,+Staycations+and+More!8m2!3d-1.14825!4d36.9604534!9m1!1b1!16s%2Fg%2F11vptx418l!3m7!1s0x182f47c8d223c873:0xa521e9f494527ad1!8m2!3d-1.14825!4d36.9604534!9m1!1b1!16s%2Fg%2F11vptx418l?entry=ttu"
+                    <a href="https://www.google.com/maps/place/RoyalChoice+Travel+Limited+-+Travel+Agency+in+Dubai+for+Safari+Tours,+Beach+Holiday+Packages,+Staycations+and+More/@-1.14825,36.9604534,17z/data=!4m18!1m9!3m8!1s0x182f47c8d223c873:0xa521e9f494527ad1!2sRoyalChoice+Travel+Limited+-+Travel+Agency+in+Dubai+for+Safari+Tours,+Beach+Holiday+Packages,+Staycations+and+More!8m2!3d-1.14825!4d36.9604534!9m1!1b1!16s%2Fg%2F11vptx418l!3m7!1s0x182f47c8d223c873:0xa521e9f494527ad1!8m2!3d-1.14825!4d36.9604534!9m1!1b1!16s%2Fg%2F11vptx418l?entry=ttu"
                         class="button-primary" target="_blank">MORE GOOGLE REVIEWS</a>
                 </div>
             </div>

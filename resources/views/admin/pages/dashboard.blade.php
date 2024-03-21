@@ -79,7 +79,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -95,7 +95,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -111,7 +111,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -127,7 +127,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -143,7 +143,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -181,7 +181,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -197,7 +197,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -214,7 +214,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -231,7 +231,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -248,7 +248,7 @@
                                     <td><span class="list-enq-name">Asa Gamble</span>
                                     </td>
                                     <td>12 may</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-success">15</span>
                                     </td>
@@ -286,11 +286,11 @@
                                                 alt=""></span>
                                     </td>
                                     <td><a href="#"><span class="list-name">Gamble Asa</span><span
-                                                class="list-enq-city">Kenya</span></a>
+                                                class="list-enq-city">Dubai</span></a>
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -310,11 +310,11 @@
                                                 alt=""></span>
                                     </td>
                                     <td><a href="#"><span class="list-name">Gamble Asa</span><span
-                                                class="list-enq-city">Kenya</span></a>
+                                                class="list-enq-city">Dubai</span></a>
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -334,11 +334,11 @@
                                                 alt=""></span>
                                     </td>
                                     <td><a href="#"><span class="list-name">Gamble Asa</span><span
-                                                class="list-enq-city">Kenya</span></a>
+                                                class="list-enq-city">Dubai</span></a>
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -358,11 +358,11 @@
                                                 alt=""></span>
                                     </td>
                                     <td><a href="#"><span class="list-name">Gamble Asa</span><span
-                                                class="list-enq-city">Kenya</span></a>
+                                                class="list-enq-city">Dubai</span></a>
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>

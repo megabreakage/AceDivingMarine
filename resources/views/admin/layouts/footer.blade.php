@@ -1,4 +1,3 @@
-
 <div class="copyrights">
-    Copyright © 2024 RoyalChoice Travel. All rights reserved.
+    Copyright © 2024 ACE Diving & Marine Services. All rights reserved.
 </div>

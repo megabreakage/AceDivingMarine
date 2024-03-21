@@ -30,7 +30,7 @@
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -52,7 +52,7 @@
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -74,7 +74,7 @@
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -96,7 +96,7 @@
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -118,7 +118,7 @@
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>
@@ -140,7 +140,7 @@
                                     </td>
                                     <td>+(254)794 601-226</td>
                                     <td>a.gamble@acedivingmarine.com</td>
-                                    <td>Kenya</td>
+                                    <td>Dubai</td>
                                     <td>
                                         <span class="badge badge-primary">02</span>
                                     </td>

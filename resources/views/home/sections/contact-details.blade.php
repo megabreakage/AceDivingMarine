@@ -55,7 +55,7 @@
                                         1st Floor, Suite B-79
                                     </li>
                                     <li>
-                                        Ruiru,Kenya
+                                        Ruiru,Dubai
                                     </li>
                                 </ul>
                             </div>
