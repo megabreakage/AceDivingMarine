@@ -124,7 +124,7 @@
                                         </div>
                                         <div>
                                             <span>
-                                                *Use a <strong>W:360px X H:450px</strong> image (format: PNG,JPG
+                                                *Use a <strong>W:410px X H:390px</strong> image (format: PNG,JPG
                                                 or JPEG)
                                             </span>
                                         </div>

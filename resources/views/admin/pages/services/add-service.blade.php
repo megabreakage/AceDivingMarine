@@ -35,7 +35,7 @@
                                         <label class="upload-btn">Upload Destination Photo</label>
                                         <div>
                                             <span>
-                                                *Use a <strong>W:460px x H:255px</strong> image (format: PNG,JPG or
+                                                *Use a <strong>W:410px x H:390px</strong> image (format: PNG,JPG or
                                                 JPEG)
                                             </span>
                                         </div>
