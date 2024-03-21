@@ -31,7 +31,7 @@ class DefaultUsersSeeder extends Seeder
                 'firstname' => 'Martin',
                 'lastname' => 'Njuguna',
                 'email' => 'martin.njau@live.com',
-                'phone_number' => '0711222444',
+                'phone_number' => '0711222446',
                 'password' => 'secretpassword',
                 'role' => 'user'
             ]
