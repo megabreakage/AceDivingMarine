@@ -23,4 +23,9 @@ class DashboardController extends Controller
         ];
         return view('admin.pages.dashboard', $this->data);
     }
+
+    public function services()
+    {
+        //
+    }
 }
