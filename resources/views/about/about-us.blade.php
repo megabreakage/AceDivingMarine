@@ -40,5 +40,5 @@
 
     @include('about.why-choose-us')
 
-    @include('home.sections.our-partners')
+    {{-- @include('home.sections.our-partners') --}}
 @endsection
