@@ -20,27 +20,28 @@
                                         <ul>
                                             <li>
                                                 <span class="d-flex">
-                                                    {{-- @foreach ($page_data['phone_numbers'] as $index => $item) --}}
                                                     <a href="tel:{{ $page_data['phone_numbers'][0]['value'] }}">
-                                                        {{-- @if ($index == 0) --}}
                                                         <i class="fas fa-phone-alt"></i>
-                                                        {{-- @endif --}}
                                                         {{ $page_data['phone_numbers'][0]['value'] }}
                                                     </a>
-                                                    {{-- @if ($index == 0)
-                                                            <span class="mx-2"> / </span>
-                                                        @endif
-                                                    @endforeach --}}
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="d-flex">
+                                                    <a href="tel:{{ $page_data['phone_numbers'][1]['value'] }}">
+                                                        <i class="fas fa-phone-alt"></i>
+                                                        INT: {{ $page_data['phone_numbers'][1]['value'] }}
+                                                    </a>
                                                 </span>
                                             </li>
                                             <li>
                                                 <span class="d-flex">
                                                     {{-- @foreach ($page_data['emails'] as $index => $item) --}}
-                                                    <a href="mailto:{{ $page_data['emails'][1]['value'] }}">
+                                                    <a href="mailto:{{ $page_data['emails'][0]['value'] }}">
                                                         {{-- @if ($index == 0) --}}
                                                         <i class="fas fa-envelope"></i>
                                                         {{-- @endif --}}
-                                                        {{ $page_data['emails'][1]['value'] }}
+                                                        {{ $page_data['emails'][0]['value'] }}
                                                     </a>
                                                     {{-- @if ($index == 0)
                                                             <span class="mx-2"> / </span>
