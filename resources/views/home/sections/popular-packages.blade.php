@@ -4,6 +4,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <h2>OUR SERVICES</h2>
+                        <div class="title-icon-divider"><i class="fas fa-toolbox"></i></div>
                         <p>Dive into excellence with our comprehensive marine diving services, offering expert solutions
                             tailored to your needs with a focus on safety, sustainability, and customer satisfaction.
                         </p>
@@ -17,7 +18,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="package-wrap">
                                     <figure class="feature-image">
-                                        <a href="#">
+                                        <a href="{{ route('service.show', $service['slug']) }}">
                                             <img loading="lazy"
                                                 src="{{ asset('assets/images/Services/' . $service['photo']) }}"
                                                 alt="">

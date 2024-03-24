@@ -6,5 +6,5 @@
     @include('home.sections.popular-packages')
     @include('about.why-choose-us')
     {{-- @include('about.our-team') --}}
-    @include('home.sections.our-partners')
+    {{-- @include('home.sections.our-partners') --}}
 @endsection
