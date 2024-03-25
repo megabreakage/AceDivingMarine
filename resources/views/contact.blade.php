@@ -96,7 +96,7 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Email Address</h4>
-                                            <span>{{ $page_data['emails'][1]['value'] }}</span>
+                                            <span>{{ $page_data['emails'][0]['value'] }}</span>
                                         </div>
                                     </li>
                                     <li>
@@ -105,7 +105,16 @@
                                         </span>
                                         <div class="details-content">
                                             <h4>Phone Number</h4>
-                                            <span>Telephone: {{ $page_data['phone_numbers'][1]['value'] }}</span>
+                                            <span>Mobile: {{ $page_data['phone_numbers'][0]['value'] }}</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="fas fa-phone-volume"></i>
+                                        </span>
+                                        <div class="details-content">
+                                            <h4>Phone Number</h4>
+                                            <span>International: {{ $page_data['phone_numbers'][1]['value'] }}</span>
                                         </div>
                                     </li>
                                 </ul>
